@@ -74,11 +74,12 @@ jobs:
           for milestone in "${milestones[@]}"; do
             version="$(date -u +'%Y.%-m.%-d-rel')${milestone}"
             dotnet run --project src/Packer -- pack --config config/packer/default.json --package-version "$version"
+            notes=$(printf '%s\n\n%s\n%s' \
+              "Auto-generated release for reaching ${milestone} translated mod language files." \
+              "Included translation file count: ${COUNT}" \
+              "Package version: ${version}")
             gh release create "mods-${milestone}" \
               "build/VSCN-VintageStory-Chinese-Language-Pack-${version}.zip" \
               --title "Translation milestone ${milestone}" \
-              --notes "Auto-generated release for reaching ${milestone} translated mod language files.
-
-Included translation file count: ${COUNT}
-Package version: ${version}"
+              --notes "$notes"
           done
