@@ -82,13 +82,29 @@ dotnet test
 
 当 Pull Request 包含翻译文件或打包相关变更时，GitHub Actions 会自动执行一次打包，并把生成的 zip 作为 artifact 上传。
 
-PR 产物使用 UTC 时间戳版本号，格式为：
+PR 产物使用 UTC 时间戳版本号，并保持为 SemVer 兼容格式，示例：
 
 ```text
-YYYYMMDD-HHMMSS
+2026.6.12-pr083830
 ```
 
 因此 `modinfo.json` 里的 `version` 字段，以及输出文件名中的 `{version}`，都会随每次 PR 打包变化。
+
+推送到 `main` 后，如果当前可打包的模组翻译数量达到新的 10 的倍数档位，也会自动发布 GitHub Release。
+
+例如：
+
+```text
+10, 20, 30, ...
+```
+
+每个档位只发布一次；如果一次提交跨过了多个档位，会自动把缺失的档位一起补齐。对应 tag 格式为：
+
+```text
+mods-10
+mods-20
+mods-30
+```
 
 ## 安装到 Vintage Story
 
