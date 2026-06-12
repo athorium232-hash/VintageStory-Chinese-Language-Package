@@ -33,7 +33,7 @@ jobs:
           echo "value=$(date -u +'%Y.%-m.%-d-pr%H%M%S')" >> "$GITHUB_OUTPUT"
 
       - name: Run tests
-        run: dotnet test --no-restore
+        run: dotnet test
 
       - name: Build pack
         run: dotnet run --project src/Packer -- pack --config config/packer/default.json --package-version "${{ steps.version.outputs.value }}"

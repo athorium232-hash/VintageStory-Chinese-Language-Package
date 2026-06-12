@@ -1,0 +1,84 @@
+name: Release Translation Milestone Pack
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'projects/assets/**'
+      - 'config/packer/**'
+      - 'src/Packer/**'
+      - 'tests/Packer.Tests/**'
+      - 'VintageStory-Chinese-Language-Package.sln'
+      - '.github/workflows/release-milestone.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Publish milestone releases
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Run tests
+        run: dotnet test
+
+      - name: Compute milestones
+        id: milestone
+        shell: bash
+        run: |
+          count=$(find projects/assets -path '*/lang/zh-cn.json' | wc -l | tr -d ' ')
+          current=$((count / 10 * 10))
+          echo "count=$count" >> "$GITHUB_OUTPUT"
+          echo "current=$current" >> "$GITHUB_OUTPUT"
+
+          milestones=()
+          if [ "$current" -ge 10 ]; then
+            for (( milestone=10; milestone<=current; milestone+=10 )); do
+              tag="mods-${milestone}"
+              if ! git rev-parse "$tag" >/dev/null 2>&1; then
+                milestones+=("$milestone")
+              fi
+            done
+          fi
+
+          if [ "${#milestones[@]}" -eq 0 ]; then
+            echo "should_release=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          milestones_csv=$(IFS=,; echo "${milestones[*]}")
+          echo "should_release=true" >> "$GITHUB_OUTPUT"
+          echo "milestones=$milestones_csv" >> "$GITHUB_OUTPUT"
+
+      - name: Build and publish releases
+        if: steps.milestone.outputs.should_release == 'true'
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COUNT: ${{ steps.milestone.outputs.count }}
+          MILESTONES: ${{ steps.milestone.outputs.milestones }}
+        run: |
+          IFS=',' read -ra milestones <<< "$MILESTONES"
+          for milestone in "${milestones[@]}"; do
+            version="$(date -u +'%Y.%-m.%-d-rel')${milestone}"
+            dotnet run --project src/Packer -- pack --config config/packer/default.json --package-version "$version"
+            gh release create "mods-${milestone}" \
+              "build/VSCN-VintageStory-Chinese-Language-Pack-${version}.zip" \
+              --title "Translation milestone ${milestone}" \
+              --notes "Auto-generated release for reaching ${milestone} translated mod language files.
+
+Included translation file count: ${COUNT}
+Package version: ${version}"
+          done
