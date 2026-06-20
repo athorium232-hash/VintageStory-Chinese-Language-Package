@@ -520,5 +520,14 @@
     ],
     "homepage": "https://mods.vintagestory.at/show/mod/30143",
     "latestVersion": "1.6.2"
+  },
+    "tankardsandgoblets": {
+    "name": "Tankards, Goblets and More!",
+    "translation": "酒杯、高脚杯及更多！",
+    "authors": [
+      "Emblazing"
+    ],
+    "homepage": "https://mods.vintagestory.at/tankardsandgoblets",
+    "latestVersion": "1.4.3"
   }
 }
