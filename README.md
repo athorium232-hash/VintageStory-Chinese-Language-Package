@@ -15,6 +15,8 @@ config/packer/default.json
 projects/assets/<mod-name>/<mod-version>/<modid>/lang/zh-cn.json
 projects/assets/<mod-name>/<mod-version>/<modid>/lang/builtin
 projects/assets/index.json
+projects/translation-terminology/*.json
+projects/dictionaries/vs-wiki/zh-cn.dictionary.json
 src/Packer
 tests/Packer.Tests
 ```
@@ -25,6 +27,8 @@ tests/Packer.Tests
 - `<mod-version>` 表示目标模组版本，不表示游戏版本。
 - `<modid>` 必须使用被汉化模组的真实 `modid`。
 - `projects/assets/index.json` 用于维护模组展示元数据，键名为 `<mod-name>`。
+- `projects/translation-terminology/*.json` 是按主题拆分的译名标准化术语表，用于 Weblate 术语协作。
+- `projects/dictionaries/vs-wiki/zh-cn.dictionary.json` 是从 Vintage Story Wiki 抽取的来源字典，供生成或校对术语表时参考。
 
 可选地，你也可以在同目录保留源语言文件，例如：
 
@@ -89,6 +93,46 @@ projects/assets/<mod-name>/<mod-version>/<modid>/lang/en.json
 当同一个真实 `modid` 同时存在多个目标模组版本时，打包器会默认选择最高版本；如果版本无法比较、同一归一化版本重复，或最终输出路径发生冲突，打包会直接失败并列出冲突来源。
 
 如果最高版本目录中存在 `lang/builtin` 标记，打包器会认为该版本已由作者内置汉化并跳过该模组，不会回退打包旧版本社区翻译。
+
+## 译名标准化术语表
+
+译名标准化文件位于：
+
+```text
+projects/translation-terminology/
+```
+
+每个分类文件都是一个普通 JSON 对象，扁平键值结构：
+
+```json
+{
+  "temporal gear": "时空齿轮",
+  "translocator": "传送器"
+}
+```
+
+键名为英文术语，值为标准中文译名。
+
+当前分类文件如下：
+
+```text
+overview.json                     标准化概况
+blocks.json                       方块
+items.json                        物品
+creatures-and-entities.json       生物与实体
+rocks-minerals-and-metals.json    岩石、矿物与金属
+food-farming-and-cooking.json     食物、农业与烹饪
+crafting-and-processing.json      工艺与加工
+mechanical-power.json             机械动力
+environment-and-worldgen.json     环境与世界生成
+biomes.json                       生物群系
+status-stats-and-damage.json      状态、属性与伤害
+ui-commands-and-server.json       界面、命令与服务器
+temporal-lore-and-story.json      时空、传说与剧情
+mod-common-terms.json             模组通用术语
+technical-content.json            技术性内容
+other.json                        其他
+```
 
 ## 本地打包
 
