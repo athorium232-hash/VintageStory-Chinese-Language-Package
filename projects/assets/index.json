@@ -558,5 +558,14 @@
     ],
     "homepage": "https://mods.vintagestory.at/reelmower",
     "latestVersion": "1.4.7"
+  },
+    "chunklod": {
+    "name": "Chunk LOD",
+    "translation": "遥远的地平线",
+    "authors": [
+      "BiasHyperion"
+    ],
+    "homepage": "https://mods.vintagestory.at/chunklod",
+    "latestVersion": "1.2.0-dev.1"
   }
 }
