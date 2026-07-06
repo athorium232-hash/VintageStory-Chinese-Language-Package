@@ -1,0 +1,39 @@
+{
+"blockselector-dialog-title": "Выберите цели для наложения",
+"label-scan-radius": "Радиус сканирования (блоков)",
+"label-label-radius": "Радиус меток (блоков)",
+"label-search": "Поиск блока или сущности",
+"label-search-detail": "Ищите по коду ресурса для точного совпадения!",
+"label-search-button": "Найти",
+"label-saved-groups-button": "Сохранённые группы",
+"label-search-results": "Результаты",
+"label-search-results-with-count": "Результаты ({0})",
+"label-active-results": "Активные цели",
+"label-show-entity-rays": "Показывать лучи сущностей?",
+"label-show-debug": "Показывать отладочную информацию на наложении?",
+"label-scan-button": "Сканировать",
+
+"label-search-result-single": "{0}",
+"label-search-result-multiple": "{0} ({1} идентификаторов)",
+
+"placeholder-search": "Название блока/сущности или код ресурса",
+"placeholder-range": "# Блоков",
+
+"savedgroups-dialog-title": "Управление сохранёнными группами",
+"label-select-group": "Выбрать группу",
+"label-rename-group": "Переименовать",
+"label-save-group": "Сохранить",
+"label-delete-group": "Удалить группу",
+"label-new-group": "Новая группа",
+"label-empty-group-list": "&lt;Нет групп&gt;",
+
+"label-scan-error": "Ошибка при сканировании: {0}",
+"label-groups-found": "Найдено групп: {0}",
+"label-scanstep-scanning-chunks": "Сканирование чанков {0} ({1} чанков) ({2})",
+"label-scanstep-building-groups": "Создание групп блоков {0} ({1} блоков) ({2})",
+"label-scanstep-generate-mesh": "Пересоздание сетки блоков {0} ({1} групп) ({2})",
+"label-scanstep-hollowing-groups": "Очистка крупных групп {0} ({1} групп) ({2})",
+"label-searching-for-things": "Поиск {0} {1}:",
+"label-thing": "объект",
+"label-things": "объектов"
+}

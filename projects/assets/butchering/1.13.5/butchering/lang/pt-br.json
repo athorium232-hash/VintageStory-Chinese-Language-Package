@@ -1,0 +1,271 @@
+{
+    "item-deadbear-*": "Urso (morto)",
+    "itemdesc-deadbear-*": "O peso do animal te atrapalha muito",
+    "item-deadchicken-*": "Frango (morto)",
+    "itemdesc-deadchicken-*": "O peso do animal te atrapalha um pouco",
+    "item-deadfox-*": "Raposa (morta)",
+    "itemdesc-deadfox-*": "O peso do animal te atrapalha um pouco",
+    "item-deadgazelle-*": "Gazela (morta)",
+    "itemdesc-deadgazelle-*": "O peso do animal te atrapalha moderadamente",
+    "item-deadhare-*": "Lebre (morta)",
+    "itemdesc-deadhare-*": "O peso do animal te atrapalha um pouco",
+    "item-deadhyena-*": "Hiena (morta)",
+    "itemdesc-deadhyena-*": "O peso do animal te atrapalha moderadamente",
+    "item-deadpig-*": "Porco (morto)",
+    "itemdesc-deadpig-*": "O peso do animal te atrapalha moderadamente",
+    "item-deadraccoon-*": "Guaxinim (morto)",
+    "itemdesc-deadraccoon-*": "O peso do animal te atrapalha um pouco",
+    "item-deadsheep-*": "Ovelha (morta)",
+    "itemdesc-deadsheep-*": "O peso do animal te atrapalha muito",
+    "item-deadwolf-*": "Lobo (morto)",
+    "itemdesc-deadwolf-*": "O peso do animal te atrapalha moderadamente",
+    "item-deadmoose-*": "Alce (morto)",
+    "itemdesc-deadmoose-*": "O peso do animal te atrapalha muito",
+    "item-deaddeer-male-adultlarge-*": "Veado grande (morto)",
+    "itemdesc-deaddeer-male-adultlarge-*": "O peso do animal te atrapalha muito",
+    "item-deaddeer-male-adult-*": "Veado (morto)",
+    "itemdesc-deaddeer-male-adult-*": "O peso do animal te atrapalha moderadamente",
+    "item-deaddeer-male-baby-*": "Veado (morto)",
+    "itemdesc-deaddeer-male-baby-*": "O peso do animal te atrapalha um pouco",
+    "item-deadgoat-male-adultlarge-*": "Cabra Grande (morta)",
+    "itemdesc-deadgoat-male-adultlarge-*": "O peso do animal te atrapalha muito",
+    "item-deadgoat-male-adult-*": "Bode (morto)",
+    "itemdesc-deadgoat-male-adult-*": "O peso do animal te atrapalha moderadamente",
+    "item-deadgoat-male-baby-*": "Cabrito (morto)",
+    "itemdesc-deadgoat-male-baby-*": "O peso do animal te atrapalha um pouco",
+
+
+    "item-deadaurochs-*": "Auroque (morto)",
+    "itemdesc-deadaurochs-*": "O peso do animal te atrapalha muito",
+
+    "item-deadgemsbok-*": "Gemsbok (morto)",
+    "itemdesc-deadgemsbok-*": "O peso do animal te atrapalha moderadamente",
+
+    "item-deadcaninae-*": "Canídeo (morto)",
+    "itemdesc-deadcaninae-*": "O peso do animal te atrapalha moderadamente",
+
+    "item-deadpanthera-*": "Pantera (morta)",
+    "itemdesc-deadpanthera-*": "O peso do animal te atrapalha moderadamente",
+    "item-deadneofelis-*": "Neofelis (morta)",
+    "itemdesc-deadneofelis-*": "O peso do animal te atrapalha um pouco",
+
+    "item-deadmachairodontinae-*": "Machairodontinae (morto)",
+    "itemdesc-deadmachairodontinae-*": "O peso do animal te atrapalha moderadamente",
+
+    "item-deadmanidae-*": "Manídeo (morto)",
+    "itemdesc-deadmanidae-*": "O peso do animal te atrapalha um pouco",
+
+    "item-deadrhinocerotidae-*": "Rinoceronte (morto)",
+    "itemdesc-deadrhinocerotidae-*": "O peso do animal te atrapalha imensamente",
+
+    "item-deadalceini-*": "Alceini (morto)",
+    "itemdesc-deadalceini-*": "O peso do animal te atrapalha muito",
+    "item-deadcapreolini-*": "Capreolini (morto)",
+    "itemdesc-deadcapreolini-*": "O peso do animal te atrapalha moderadamente",
+    "item-deadodocoileini-*": "Odocoileini (morto)",
+    "itemdesc-deadodocoileini-*": "O peso do animal te atrapalha moderadamente",
+
+    "item-deadanatidae-*": "Anatídeo (morto)",
+    "itemdesc-deadanatidae-*": "O peso do animal te atrapalha um pouco",
+    "item-deadcasuariidae-*": "Casuariidae (morto)",
+    "itemdesc-deadcasuariidae-*": "O peso do animal te atrapalha moderadamente",
+
+    "item-deadacanthisittidae-*": "Acanthisittidae (morto)",
+    "itemdesc-deadacanthisittidae-*": "O peso do animal te atrapalha um pouco",
+    "item-deadaegothelidae-*": "Aegothelidae (morto)",
+    "itemdesc-deadaegothelidae-*": "O peso do animal te atrapalha um pouco",
+    "item-deadapterygidae-*": "Apterygidae (morto)",
+    "itemdesc-deadapterygidae-*": "O peso do animal te atrapalha um pouco",
+    "item-deadaptornithidae-*": "Aptornithidae (morto)",
+    "itemdesc-deadaptornithidae-*": "O peso do animal te atrapalha um pouco",
+    "item-deaddinornithidae-*": "Dinornithidae (morto)",
+    "itemdesc-deaddinornithidae-*": "O peso do animal te atrapalha moderadamente/muito",
+    "item-deadstrigopidae-*": "Strigopidae (morto)",
+    "itemdesc-deadstrigopidae-*": "O peso do animal te atrapalha um pouco",
+
+
+
+    "item-smoked-none-redmeat": "Carne vermelha defumada",
+    "item-smoked-none-bushmeat": "Carne de caça defumada",
+    "item-smoked-none-fish": "Peixe defumado",
+    "item-smoked-none-primemeat": "Carne especial defumada",
+    "item-smoked-cured-redmeat": "Carne vermelha curada e defumada",
+    "item-smoked-cured-bushmeat": "Carne de caça curada e defumada",
+    "item-smoked-cured-fish": "Peixe curado e defumado",
+    "item-smoked-healing-primemeat": "Carne especial curada e defumada",
+    "itemdesc-smoked-*": "Preparada em um suporte de defumação",
+
+    "recipeingredient-item-primemeat-raw": "carne especial",
+    "recipeingredient-item-primemeat-raw-insturmentalcase": "carne especial",
+    "recipeingredient-item-smoked-*-redmeat": "carne vermelha defumada",
+    "recipeingredient-item-smoked-*-redmeat-insturmentalcase": "carne vermelha defumada",
+    "recipeingredient-item-smoked-*-fish": "peixe defumado",
+    "recipeingredient-item-smoked-*-fish-insturmentalcase": "Peixe defumado",
+
+    "game:meal-ingredient-stew-primary-primemeat-raw": "carne especial",
+    "game:meal-ingredient-stew-secondary-primemeat-raw": "carne especial",
+    "game:meal-ingredient-stew-primary-smoked-*-redmeat": "carne vermelha defumada",
+    "game:meal-ingredient-stew-secondary-smoked-*-redmeat": "carne vermelha defumada",
+    "game:meal-ingredient-stew-primary-smoked-*-fish": "peixe defumado",
+    "game:meal-ingredient-stew-secondary-smoked-*-fish": "peixe defumado",
+    "game:meal-ingredient-soup-secondary-primemeat-raw": "carne especial",
+
+    "game:meal-ingredient-soup-secondary-smoked-*-redmeat": "carne vermelha defumada",
+    "game:meal-ingredient-soup-secondary-smoked-*-fish": "peixe defumado",
+    "game:meal-ingredient-soup-primary-bloodportion": "sangue",
+
+
+    "item-toolhead-arrow-bone": "Ponta de flecha de osso",
+    "item-toolhead-pick-bone": "Cabeça de picareta de osso",
+
+    "item-needle-bone": "Agulha de osso",
+    "item-needle-bone-kit": "Kit de agulha de osso",
+    "itemdesc-needle-bone-kit": "Consome recursos de acordo com a receita",
+
+    "item-arrow-bone": "Flecha de osso",
+    "itemdesc-arrow-bone": "Um pouco mais durável que as alternativas de sílex",
+
+    "item-bonepickaxe": "Picareta de osso",
+    "itemdesc-bonepickaxe": "Pode ser usada para quebrar rochas, mas não minério ou metal",
+
+    "item-butcherybag-primitive": "Bolsa de açougueiro primitiva",
+    "item-butcherybag-standard": "Bolsa de açougueiro",
+    "itemdesc-butcherybag-*": "Uma bolsa para transportar animais com mais eficiência para o abate",
+
+    "item-glueportion-sinew-cold": "Cola de tendão",
+  "item-glueportion-hide-cold": "Cola Fria de Pele",
+  "item-glueportion-hide-hot": "Cola Quente de Pele",
+  "itemdesc-glueportion-sinew-cold": "Tendão liquefeito egrudento que pode ser usado como cola em blocos de tralha. 25% de Reparo",
+  "itemdesc-glueportion-hide-cold": "Cola de Pele que endurecei. Reaqueça para usar",
+  "itemdesc-glueportion-hide-hot": "Cola Quente de Pele que pode ser usada como cola em blocos de tralha. 33% de Reparo",
+
+
+
+    "item-sinew-dry": "Tendão seco",
+    "item-sinew-wet": "Tendão molhado",
+    "item-sinew-ground": "Tendão triturado",
+    "itemdesc-sinew-*": "Fibras finas de tecido que conectam músculos aos ossos",
+
+    "item-offal-clean": "Vísceras limpas",
+    "item-offal-bloody": "Vísceras ensanguentadas",
+    "itemdesc-offal-clean": "Os órgãos de uma criatura",
+    "itemdesc-offal-bloody": "Os órgãos ensanguentados de uma criatura",
+
+    "item-sausage-bloodsausage-raw": "Chouriço cru",
+    "item-sausage-bloodsausage-cooked": "Chouriço cozido",
+    "item-sausage-blackpudding-raw": "Morcela crua",
+    "item-sausage-blackpudding-cooked": "Morcela cozida",
+    "itemdesc-sausage-bloodsausage-*": "Chouriço feito com 0.2L de sangue e carne",
+    "itemdesc-sausage-blackpudding-*": "Morcela feita com 0.8L de sangue e gordura",
+
+    "item-blooddough-spelt": "Massa de espelta com sangue",
+    "item-blooddough-sunflower": "Massa de girassol com sangue",
+    "item-blooddough-rye": "Massa de centeio com sangue",
+    "item-blooddough-flax": "Massa de linhaça com sangue",
+    "item-blooddough-rice": "Massa de arroz com sangue",
+    "item-blooddough-cassava": "Massa de mandioca com sangue",
+    "item-blooddough-amaranth": "Massa de amaranto com sangue",
+
+    "item-bloodbread-spelt-perfect": "Pão de sangue (espelta)",
+    "item-bloodbread-sunflower-perfect": "Pão de sangue (girassol)",
+    "item-bloodbread-rye-perfect": "Pão de sangue (centeio)",
+    "item-bloodbread-flax-perfect": "Pão de sangue (linhaça)",
+    "item-bloodbread-rice-perfect": "Pão de sangue (arroz)",
+    "item-bloodbread-cassava-perfect": "Pão de sangue (mandioca)",
+    "item-bloodbread-amaranth-perfect": "Pão de sangue (amaranto)",
+    "item-bloodbread-spelt-partbaked": "Pão de sangue (espelta, parcialmente assado)",
+  "item-bloodbread-sunflower-parbaked": "Pão de sangue (girassol, parcialmente assado)",
+    "item-bloodbread-rye-partbaked": "Pão de sangue (centeio, parcialmente assado)",
+    "item-bloodbread-flax-partbaked": "Pão de sangue (linhaça, parcialmente assado)",
+    "item-bloodbread-rice-partbaked": "Pão de sangue (arroz, parcialmente assado)",
+    "item-bloodbread-cassava-partbaked": "Pão de sangue (mandioca, parcialmente assado)",
+    "item-bloodbread-amaranth-partbaked": "Pão de sangue (amaranto, parcialmente assado)",
+    "item-bloodbread-spelt-charred": "Pão de sangue (espelta, queimado)",
+  "item-bloodbread-sunflower-charred": "Pão de sangue (girassol, queimado)",
+    "item-bloodbread-rye-charred": "Pão de sangue (centeio, queimado)",
+    "item-bloodbread-flax-charred": "Pão de sangue (linhaça, queimado)",
+    "item-bloodbread-rice-charred": "Pão de sangue (arroz, queimado)",
+    "item-bloodbread-cassava-charred": "Pão de sangue (mandioca, queimado)",
+    "item-bloodbread-amaranth-charred": "Pão de sangue (amaranto, queimado)",
+
+    "incontainer-item-bloodportion": "Sangue",
+    "item-bloodportion": "Sangue",
+
+    "item-primemeat-raw": "Carne especial crua",
+    "itemdesc-primemeat-raw": "Um corte especial de carne",
+    "item-primemeat-curedhealing": "Carne especial curada",
+    "itemdesc-primemeat-curedhealing": "Carne especial curada que pode ser defumada para melhorar ainda mais a cura",
+    "item-primemeat-cooked": "Carne especial cozida",
+    "itemdesc-primemeat-cooked": "Um corte especial de carne, agora cozido",
+    "item-primemeat-healing": "Carne especial preparada",
+    "itemdesc-primemeat-healing": "Um corte de carne de primeira, agora pronto para ser curado para regeneração",
+
+
+
+    "item-hook-copper": "Gancho de cobre",
+    "item-hook-tinbronze": "Gancho de bronze",
+    "item-hook-bismuthbronze": "Gancho de bronze-bismuto",
+    "item-hook-blackbronze": "Gancho de bronze negro",
+    "item-hook-iron": "Gancho de ferro",
+    "item-hook-flint": "Gancho de sílex",
+
+    "block-butchertable-advanced-*": "Mesa de açougue avançada",
+    "blockdesc-butchertable-advanced-*": "120% de drops quando a criatura é abatida. Ferramentas consumidas ao fabricar. Vai para um slot da mochila.",
+    "block-butchertable-simple-*": "Mesa de açougue",
+    "blockdesc-butchertable-simple-*": "100% de drops quando a criatura é abatida. Ferramentas consumidas ao fabricar. Vai para um slot da mochila.",
+    "block-butchertable-primitive-*": "Mesa de açougue primitiva",
+    "blockdesc-butchertable-primitive-*": "80% de drops quando a criatura é abatida. Ferramentas consumidas ao fabricar. Vai para um slot da mochila.",
+    "block-butcherhook-iron-*": "Gancho de esfolamento avançado",
+    "blockdesc-butcherhook-iron-*": "120% de drops quando a criatura é esfolada",
+    "block-butcherhook-copper-*": "Gancho de esfolamento",
+    "blockdesc-butcherhook-copper-*": "100% de drops quando a criatura é esfolada",
+    "block-butcherhook-tinbronze-*": "Gancho de esfolamento",
+    "blockdesc-butcherhook-tinbronze-*": "100% de drops quando a criatura é esfolada",
+    "block-butcherhook-bismuthbronze-*": "Gancho de esfolamento",
+    "blockdesc-butcherhook-bismuthbronze-*": "100% de drops quando a criatura é esfolada",
+    "block-butcherhook-blackbronze-*": "Gancho de esfolamento",
+    "blockdesc-butcherhook-blackbronze-*": "100% de drops quando a criatura é esfolada",
+    "block-butcherhook-flint-*": "Gancho de esfolamento primitivo",
+    "blockdesc-butcherhook-flint-*": "80% de drops quando a criatura é esfolada",
+    "block-smokingrack-copper-*": "Suporte de defumação",
+    "blockdesc-smokingrack-copper-*": "Coloque uma fogueira acesa diretamente abaixo para começar a defumação",
+    "block-smokingrack-iron-*": "Suporte de defumação",
+    "blockdesc-smokingrack-iron-*": "Coloque uma fogueira acesa diretamente abaixo para começar a defumação",
+
+
+
+    "game:tabname-butchering": "Açougue",
+
+    "right-click-pick-up-empty-slot": "Pegar em um slot vazio",
+    "right-click-pick-up-empty-backpack-slot": "Pegar em um slot vazio da mochila",
+    "put-creature-on-table": "Colocar a criatura na mesa",
+    "take-creature-from-table": "Pegar a criatura da mesa",
+    "butcher-creature": "Abater a criatura",
+    "put-creature-on-hook": "Colocar a criatura no gancho",
+    "take-creature-from-hook": "Pegar a criatura do gancho",
+    "skin-creature": "Esfolar a criatura",
+    "put-item-on-hook": "Colocar o item no gancho",
+    "take-item-from-hook": "Pegar o item do gancho",
+    "needs-to-be-smoke-for": "Precisa ser defumado por mais {0,2:D2}:{1,2:D2} horas.",
+    "needs-to-be-hanging-for": "Precisa ficar pendurado por mais {0,2:D2}:{1,2:D2} horas.",
+
+
+
+    "block-temporalbutcherbox-on-*": "Caixa de açougue temporal ligada",
+    "block-temporalbutcherbox-off-*": "Caixa de açougue temporal desligada",
+    "blockdesc-temporalbutcherbox-*": "Caixa de açougue alimentada por energia temporal configurada para preservação de carne. Adicione engrenagens temporais para ativar.",
+
+    "temporalbutcherbox-hours-left": "Horas restantes até a energia temporal acabar: {0:D2} horas",
+    "temporalbutcherbox-out-of-power": "Sem energia temporal",
+    "temporalbutcherbox-add-temporal-gear": "Adicionar engrenagem temporal para ativar",
+    "temporalbutcherbox-title": "Caixa de açougue",
+
+
+
+  "game:butcheringguide-title": "Guia do Açougueiro",
+  "game:butcheringguide-text": "<font size=24 weight=bold align=center>Guia do Açougueiro</font>\n\n<font size=20 weight=bold align=center>Introdução</font>\n\n    Este mod foi criado para entregar mecânicas mais imersivas de abate, mas fazer isso DEIXA o jogo mais difícil. Isto é feito através de vários passos antes que você possa pegar os recursos de um animal.\n\n    <font size=18 weight=bold align=center>Como começo a preparar animais?<br>Um guia passo a passo</font>\n\n<strong>Passo 0:</strong>\n    Você precisará destas coisas para começar o abate:\n        - Qualquer faca\n        - <a href=\"handbooksearch://Skinning Hook\">Gancho de Esfolamento</a>\n        - <a href=\"handbooksearch://Butchering Table\">Mesa de Açougue</a> (As mesas de açougue vão nos seus slots de mochila e podem ser colocadas como uma colméia cheia usando<hk>ctrl</hk> + números de 1-4 ou rolando a roda do mouse. As Mesas de Açougue têm 3 blocos de largura e vão se extender 2 blocos para a direita de onde você colocá-la.)\n        - Opcional: <a href=\"handbooksearch://Butchering Bag\">Bolsa de Açougueiro</a>\n        - Opcional: Qualquer Cutelo (Cutelos usam menos durabilidade que facas quando estiver preparando um animal numa Mesa de Açougue)\n\n<strong>Passo 1:</strong>\n    Quando você matar uma criatura, terá duas opções. Você pode abrí-la e pegar apenas uma pequena fração dos itens que poderia conseguir (para quando estiver realmente desesperado) ou você clica nela com o botão direito e ela será colocada no seu inventário se for pequena, ou num slot vazio de mochila se for grande demais (os quatro à direita da sua hotbar). Se você tiver uma Bolça de Açougueiro, ela então será colocada no seu inventário independente do tamanho.\n\n<strong>Passo 2:</strong>\n    Traga este animal para um local onde você construiu um Gancho de Esfolamento. Clicando com o botão direito colocará o animal no gancho, removendo-o do seu inventário ou slot de bolsa.\n\n<strong>Passo 3:</strong>\n    Mirando no gancho, clique e segure com o botão direito com qualquer faca até que a criatura seja esfolada.\n\n<strong>Passo 4:</strong>\n    Espere a sangria da criatura terminar (demora algum tempo). Você notará que o corpo vai mudar de cor para um tom menos vermelho quando tiver terminado.\n\n<strong>Passo 5:</strong>\n    Clique com o botão direito no gancho novamente para remover a carcaça, e ela será novamente colocada no seu inventário (se você tiver uma bolsa de açougueiro) ou num slot de mochila\n\n<strong>Passo 6:</strong>\n    Coloque a carcaça sem sangue numa Mesa de Açougue e então segure o botão direito com uma faca ou cutelo. Isso vai processar a carne nas peças usáveis e deixar pra trás os ossos que podem ser quebrados para transformar em itens.\n",
+
+  "game:butcheringinfo-title": "Açougue: Informação",
+  "game:butcheringinfo-text": "<font size=24 weight=bold align=center>Açougue: Informação</font>\n\n        <strong>Espólios e usos:</strong>\n\n - <a href=handbook://item-butchering:sinew-wet>Tendão</a> (Vem de animais que dão carne de caça e precisa secar antes do uso)\n   <strong>Usos:</strong>\n    <a href=\"handbooksearch://Bow\">Arcos</a>\n    <a href=handbook://item-sewingkit>Kits de Costura</a>\n    <a href=handbook://item-butchering:glueportion-sinew-cold>Cola de Tendão</a>\n\n - <a href=handbook://item-butchering:primemeat-raw>Carne Especial</a> (Vem de animais que dão carne vermelha e tem alta saturação e cura)\n   <strong>Usos:</strong>\n    Refeições\n    <a href=handbook://item-butchering:primemeat-healing>Carne Especial Preparada</a>\n    <a href=handbook://item-fat>Processando Gordura</a>\n\n - <a href=handbook://item-butchering:offal-bloody>Vísceras</a> (Os órgãos de uma criatura abatida que podem ser usados para receitas de alimentos após serem limpas num barril)\n   <strong>Usos:</strong>\n    <a href=handbook://item-butchering:sausage-bloodsausage-raw>Chouriço</a> & <a href=handbook://item-butchering:sausage-blackpudding-raw>Morcela</a>\n\n - <a href=handbook://item-butchering:bloodportion>Sangue</a> (Pode ser usado em várias receitas e colhido por um balde 2-4 blocos abaixo de uma criatura que está no processo de sangria nos ganchos de esfolamento)\n   <strong>Usos:</strong>\n    <a href=\"handbooksearch://Blooddough\">Massa com Sangue</a> (Faz pães e tortas)\n    Sopa de Sangue (Substitui água na receita de sopa)\n\n - Pele Crua\n   <strong>Usos:</strong>\n    <a href=handbook://item-butchering:glueportion-hide-hot>Cola de Pele</a>\n\n - Ossos\n   <strong>Usos:</strong>\n    <a href=handbook://item-bone>Lascagem de osso</a> (Pode fazer pontas de flecha e agulhas)\n\n        <strong>Mecânicas Modificadas:</strong>\n\n - Defumação (Alimentos podem ser defumados ao colocar uma fogueira abaixo de um <a href=handbooksearch://Smoking>Suporte de Defumação</a> para extender sua vida útil)\n\n - Coleta de Sangue (Sangue pode ser obtido ao colocar um balde 2-4 blocos abaixo de um animal em processo de sangria e esperando que o processo acabe)\n\n - Massa de Animais (Corpos de animais agora deixam você mais devagar)\n\n\n        <strong>Coisas para tomar nota:</strong>\n\n - Pequenas criaturas como galinhas, lebres e raposas podem ir em qualquer slot de inventário e não precisam ser colocados nos slots de bolsa.\n - Cutelos usam menos durabilidade que facas quando usados para processar animais na mesa de açougue\n - Criaturas vão apodrecer se deixadas tempo demais nos ganchos e mesa de açougue. Para conseguir restos podres delas, simplesmente coloque-as na sua grade de fabricação.\n - O abate e a defumação são feitas de forma mais apropriada se estiverem dentro de uma despensa.\n - Bolsas de açougue podem ter espaços extras para carregar animais mortos.\n - As mesas de açougue vão nos slots de mochila e podem ser colocadas como uma colméia de palha. Segundo, elas têm 3 blocos de largura e se extenderão 2 blocos à direita de onde você colocá-la.\n"
+
+}

@@ -1,0 +1,103 @@
+{
+    "missing-hammer": "Відсутній молоток в лівій руці.",
+    "missing-item": "Відсутній предмет/інструмент у правій руці.",
+    "missing-item-quantity": "Недостатньо предметів у руці.",
+    "wrong-item": "Неправильний предмет/інструмент у правій руці.",
+    "missing-material": "Недостатньо матеріалів для будівництва.",
+    "invalid-frame": "Схил занадто високий для покриття даху.",
+
+    "place-frame": "Побудова каркасу покрівлі",
+    "place-frame-standard": "Стандартний",
+    "place-frame-standard-left": "Стандартний лівий",
+    "place-frame-standard-right": "Стандартний правий",
+    "place-frame-eave": "Карниз",
+    "place-frame-eave-left": "Карниз лівий",
+    "place-frame-eave-right": "Карниз правий",
+    "place-frame-ridge": "Гребінь",
+
+    "place-frame-auto": "Авто.",
+    "place-frame-back": "Назад",
+
+    "place-frame-adv-standard": "Ручна конфігурація",
+    "place-frame-adv-eave": "Ручна конфігурація",
+    "place-frame-adv-ridge": "Ручна конфігурація",
+
+    "place-frame-standard-none": "Відсутній",
+    "place-frame-standard-slope1-lower": "3x1 - низький",
+    "place-frame-standard-slope1-middle": "3x1 - середній",
+    "place-frame-standard-slope1-upper": "3x1 - високий",
+
+    "place-frame-standard-slope2-lower": "2x1 - низький",
+    "place-frame-standard-slope2-upper": "2x1 - високий",
+
+    "place-frame-standard-slope3-middle": "1x1 - середній",
+
+    "place-frame-standard-slope4-lower": "1x2 - низький",
+    "place-frame-standard-slope4-upper": "1x2 - високий",
+
+    "place-frame-standard-slope5-lower": "1x3 - низький",
+    "place-frame-standard-slope5-middle": "1x3 - середній",
+    "place-frame-standard-slope5-upper": "1x3 - високий",
+
+    "place-frame-eave-slope1": "3x1",
+    "place-frame-eave-slope2": "2x1",
+    "place-frame-eave-slope3": "1x1",
+    "place-frame-eave-slope4": "1x2",
+    "place-frame-eave-slope5": "1x3",
+
+    "place-frame-ridge-slope1": "3x1",
+    "place-frame-ridge-slope2": "2x1",
+    "place-frame-ridge-slope3": "1x1",
+    "place-frame-ridge-slope4": "1x2",
+    "place-frame-ridge-slope5": "1x3",
+
+
+    "roof-corner-inner": "Внутрішній",
+    "roof-corner-outer": "Зовнішній",
+
+    "add-fill": "Додати базовий блок",
+
+
+
+    "craftinginfo-guide-title": "VS Roofing Mod: Посібник зі створення",
+    "craftinginfo-guide-text": "<strong>VS Roofing Mod: Посібник зі створення</strong><br>Дахи створюються спочатку шляхом побудови каркаса, а потім додавання до нього покрівельних матеріалів.<br><strong>Каркаси</strong><br>Каркаси можна побудувати двох типів<br><strong>Палиці / Бамбук</strong><br> Ці ранні ігрові каркаси виготовляються з палиць або бамбукових кілків. <itemstack type=\"item\">stick|bamboostakes</itemstack> тримаючи шпагат/мотузку (льняні волокна, рогоз і папірус) <itemstack type=\"item\">flaxfibers|cattailtops|papyrustops</itemstack> у вашій вільній руці.<br><strong>Деревина</strong><br>Цей каркас піздньої гри створюються з дошок <itemstack type=\"item\">plank-birch|plank-oak|plank-maple|plank-pine|plank-acacia|plank-kapok|plank-baldcypress|plank-larch|plank-redwood|plank-ebony|plank-walnut|plank-purpleheart|plank-aged</itemstack> тримаючи молот <itemstack type=\"item\">hammer-copper|hammer-tinbronze|hammer-bismuthbronze|hammer-blackbronze|hammer-gold|hammer-silver|hammer-iron|hammer-meteoriciron|hammer-steel</itemstack> у лівій руці.<br>Створіть каркас натиснувши <hk>rightmouse</hk>. Ви також можете вибрати тип каркаса (стандартний, карнизний, гребневий) натиснувши кнопку <hk>toolmodeselect</hk> (Режими інструментів).<br>Каркаси можна розміщувати горизонтально та вертикально, створюючи низькі та високі схили. Кути (зовнішні та внутрішні) створюються комбінаціями перпендикулярних дахів, розміщених один за одним або один перед одним.<br><br><strong>Матеріали</strong><br>Щоб додати покрівельні матеріали, утримуйте необхідний предмет/блок і натисніть <hk>rightmouse</hk> утримуючи <hk>shift</hk> на каркасі.<br><font color=\"#C41E3A\">Для деяких матеріалів може знадобитися інструмент у лівій руці.</font> <br>Деякі рецепти покрівлі можуть також вимагати додаткових ресурсів у вашому інвентарі. Дивіться <a href=\"handbook://vsroofing:craftinginfo-recipes\">Рецепти</a> для детальнішої інформації.<br><strong>Базовий блок</strong><br>Щоб додати базовий (заповнювальний) блок, утримуйте блок, який можна обтесати, і натисніть <hk>rightmouse</hk> утримуючи <hk>ctrl</hk>. Ці базові блоки можна обтесувати.",
+
+    "craftinginfo-recipes-title": "VS Roofing Mod: Рецепти",
+    "craftinginfo-recipes-text": "<strong>VS Roofing Mod: Рецепти</strong><br>Нижче послідовно описано етапи будівництва для кожного типу покрівлі. Деякі етапи вимагають використання декількох матеріалів*.<br>
+<strong>Солома</strong><br>- 4 x сухої трави або соломи <itemstack type=\"item\">drygrass|thatch</itemstack>.
+Примітка: Підтримує схили 1x1, 2x1, 3x1 та 1x2.
+<strong>Бамбук</strong><br>- 2 x зв'язка бамбукових колів <itemstack type=\"item\">bamboostakes</itemstack>.
+<strong>Глиняна черепиця</strong><br>- 1 x обпалена глиняна черепиця <itemstack type=\"item\">shingle-burned-black|shingle-burned-blue|shingle-burned-brown|shingle-burned-cream|shingle-burned-fire|shingle-burned-gray|shingle-burned-orange|shingle-burned-red|shingle-burned-tan</itemstack>. у лівій руці: <itemstack type=\"item\">hammer-copper|hammer-tinbronze|hammer-bismuthbronze|hammer-blackbronze|hammer-gold|hammer-silver|hammer-iron|hammer-meteoriciron|hammer-steel</itemstack>.
+<strong>Скло</strong><br>- 1 x блок склу <itemstack type=\"block\">glass-quartz|glass-plain|glass-green|glass-blue|glass-violet|glass-red|glass-yellow|glass-brown|glass-vintage|glass-smoky|glass-pink</itemstack>. у лівій руці: <itemstack type=\"item\">hammer-copper|hammer-tinbronze|hammer-bismuthbronze|hammer-blackbronze|hammer-gold|hammer-silver|hammer-iron|hammer-meteoriciron|hammer-steel</itemstack>.
+<strong>Шифер</strong><br>- 3 x шиферне каміння <itemstack type=\"item\">stone-slate</itemstack> + 1 x clay <itemstack type=\"item\">clay-blue|clay-red|clay-fire</itemstack>. у лівій руці: <itemstack type=\"item\">hammer-copper|hammer-tinbronze|hammer-bismuthbronze|hammer-blackbronze|hammer-gold|hammer-silver|hammer-iron|hammer-meteoriciron|hammer-steel</itemstack>.
+<strong>Мідь</strong><br>- 1 x пластина з міді <itemstack type=\"item\">metalplate-copper</itemstack>. у лівій руці: <itemstack type=\"item\">hammer-copper|hammer-tinbronze|hammer-bismuthbronze|hammer-blackbronze|hammer-gold|hammer-silver|hammer-iron|hammer-meteoriciron|hammer-steel</itemstack>.
+<strong>Базове дерево</strong><br>- 1 x дошка <itemstack type=\"item\">plank-birch|plank-oak|plank-maple|plank-pine|plank-acacia|plank-kapok|plank-baldcypress|plank-larch|plank-redwood|plank-ebony|plank-walnut|plank-purpleheart|plank-aged</itemstack>. у лівій руці: <itemstack type=\"item\">hammer-copper|hammer-tinbronze|hammer-bismuthbronze|hammer-blackbronze|hammer-gold|hammer-silver|hammer-iron|hammer-meteoriciron|hammer-steel</itemstack>.
+<strong>Дерево</strong><br>- 1 x дошки <itemstack type=\"item\">plank-birch|plank-oak|plank-maple|plank-pine|plank-acacia|plank-kapok|plank-baldcypress|plank-larch|plank-redwood|plank-ebony|plank-walnut|plank-purpleheart|plank-aged</itemstack>. у лівій руці: <itemstack type=\"item\">hammer-copper|hammer-tinbronze|hammer-bismuthbronze|hammer-blackbronze|hammer-gold|hammer-silver|hammer-iron|hammer-meteoriciron|hammer-steel</itemstack>.
+- 4 x дошки <itemstack type=\"item\">plank-birch|plank-oak|plank-maple|plank-pine|plank-acacia|plank-kapok|plank-baldcypress|plank-larch|plank-redwood|plank-ebony|plank-walnut|plank-purpleheart|plank-aged</itemstack>. у лівій руці: <itemstack type=\"item\">hammer-copper|hammer-tinbronze|hammer-bismuthbronze|hammer-blackbronze|hammer-gold|hammer-silver|hammer-iron|hammer-meteoriciron|hammer-steel</itemstack>.
+<strong>Дернина</strong><br>- 1 x дошки <itemstack type=\"item\">plank-birch|plank-oak|plank-maple|plank-pine|plank-acacia|plank-kapok|plank-baldcypress|plank-larch|plank-redwood|plank-ebony|plank-walnut|plank-purpleheart|plank-aged</itemstack>. у лівій руці: <itemstack type=\"item\">hammer-copper|hammer-tinbronze|hammer-bismuthbronze|hammer-blackbronze|hammer-gold|hammer-silver|hammer-iron|hammer-meteoriciron|hammer-steel</itemstack>.
+- 1 x ґрунт середньої родючості <itemstack type=\"block\">soil-medium-none|soil-medium-verysparse|soil-medium-sparse|soil-medium-normal</itemstack>.
+- 1 x суха трава <itemstack type=\"item\">drygrass</itemstack>.
+Примітка: Підтримує схили 1x1, 2x1 та 3x1.
+<strong>Металевий лист</strong><br>- 1 x металева пластина <itemstack type=\"item\">metalplate-cupronickel|metalplate-brass|metalplate-tinbronze|metalplate-bismuthbronze|metalplate-blackbronze|metalplate-electrum|metalplate-iron|metalplate-gold|metalplate-lead|metalplate-tin|metalplate-chromium|metalplate-nickel|metalplate-platinum|metalplate-titanium|metalplate-zinc|metalplate-silver|metalplate-bismuth|metalplate-molybdochalkos</itemstack>. у лівій руці: <itemstack type=\"item\">hammer-copper|hammer-tinbronze|hammer-bismuthbronze|hammer-blackbronze|hammer-gold|hammer-silver|hammer-iron|hammer-meteoriciron|hammer-steel</itemstack>.
+
+<i>* Якщо потрібно кілька матеріалів, перший зазначений матеріал є основним і повинен бути утримуваний (в активному слоті гарячої панелі).</i>
+",
+
+
+    "roof": "покрівля",
+    "frame": "каркас",
+    "frame-stick": "Примітивний",
+    "frame-bamboo": "Бамбуковий",
+    "frame-plank": "Дошковий",
+    "roof-thatch": "солом'яна",
+    "roof-clayshingle": "черепична",
+    "roof-wood-basic": "дошкова",
+    "roof-wood": "ґонтова",
+    "roof-sod-bare": "дернова",
+    "roof-sod": "дернова",
+    "roof-bamboo": "бамбукова",
+    "roof-glass": "скляна",
+    "roof-slate": "шиферна",
+    "roof-copper": "мідна",
+    "roof-metal": "металева"
+}

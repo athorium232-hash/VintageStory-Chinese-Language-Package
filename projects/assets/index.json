@@ -6,7 +6,7 @@
       "DejFidOFF"
     ],
     "homepage": "https://mods.vintagestory.at/achievements",
-    "latestVersion": "1.0.9"
+    "latestVersion": "1.1.0"
   },
   "aculinaryartillery": {
     "name": "A Culinary Artillery",
@@ -15,7 +15,7 @@
       "l33tmaan"
     ],
     "homepage": "https://mods.vintagestory.at/aculinaryartillery",
-    "latestVersion": "2.0.0-dev.20"
+    "latestVersion": "2.0.0-dev.21"
   },
   "alchemy": {
     "name": "Alchemy",
@@ -24,7 +24,7 @@
       "llama3013"
     ],
     "homepage": "https://mods.vintagestory.at/alchemy",
-    "latestVersion": "2.1.0-rc.68"
+    "latestVersion": "2.1.0-rc.81"
   },
   "animaltrader": {
     "name": "Animal Trader",
@@ -69,7 +69,7 @@
       "Crabb"
     ],
     "homepage": "https://mods.vintagestory.at/biomes",
-    "latestVersion": "2.0.3"
+    "latestVersion": "2.1.1"
   },
   "blacksmithglovesv2": {
     "name": "Blacksmith Gloves V2",
@@ -87,7 +87,7 @@
       "Xel"
     ],
     "homepage": "https://mods.vintagestory.at/xray",
-    "latestVersion": "4.11.3"
+    "latestVersion": "4.11.5"
   },
   "boricalchemy": {
     "name": "Boric Alchemy",
@@ -105,7 +105,7 @@
       "CaptainOats"
     ],
     "homepage": "https://mods.vintagestory.at/butchering",
-    "latestVersion": "1.13.4"
+    "latestVersion": "1.13.5"
   },
   "carryon": {
     "name": "Carry On",
@@ -114,7 +114,7 @@
       "NerdScurvy"
     ],
     "homepage": "https://mods.vintagestory.at/carryon",
-    "latestVersion": "2.0.0-pre.4"
+    "latestVersion": "2.0.0-pre.7"
   },
   "chiselleaf": {
     "name": "Chisel Leaf",
@@ -123,7 +123,7 @@
       "azurempress"
     ],
     "homepage": "https://mods.vintagestory.at/chiselleaf",
-    "latestVersion": "1.2.0"
+    "latestVersion": "1.2.1"
   },
   "chiseltools": {
     "name": "QP's Chisel Tools",
@@ -141,7 +141,7 @@
       "KenigVovan"
     ],
     "homepage": "https://mods.vintagestory.at/canclaims",
-    "latestVersion": "4.3.13"
+    "latestVersion": "4.3.17"
   },
   "combatoverhaul": {
     "name": "Combat Overhaul",
@@ -177,7 +177,7 @@
       "l33tmaan"
     ],
     "homepage": "https://mods.vintagestory.at/expandedfoods",
-    "latestVersion": "2.0.0-dev.10"
+    "latestVersion": "2.0.0-dev.12"
   },
   "fastmap": {
     "name": "Fast Map",
@@ -188,14 +188,14 @@
     "homepage": "https://mods.vintagestory.at/show/mod/8499",
     "latestVersion": "122.5.1"
   },
-  "feralplayerpack": {
+  "feralpack": {
     "name": "Animalica - Playable Animals",
     "translation": "Animalica - 可玩动物",
     "authors": [
       "Craditz"
     ],
     "homepage": "https://mods.vintagestory.at/feralplayerpack",
-    "latestVersion": "0.2.10"
+    "latestVersion": "1.0.6"
   },
   "firearms": {
     "name": "Firearms",
@@ -222,7 +222,7 @@
       "Vinter_Nacht"
     ],
     "homepage": "https://mods.vintagestory.at/fromgoldencombs",
-    "latestVersion": "2.0.7"
+    "latestVersion": "2.0.8"
   },
   "grouplog": {
     "name": "Group Log",
@@ -231,7 +231,7 @@
       "ValrothGryffn"
     ],
     "homepage": "https://mods.vintagestory.at/grouplog",
-    "latestVersion": "1.0.3"
+    "latestVersion": "1.0.5"
   },
   "icebreaker": {
     "name": "Icebreaker Mod",
@@ -276,7 +276,7 @@
       "Kaisentlaia"
     ],
     "homepage": "https://mods.vintagestory.at/kscartographytable",
-    "latestVersion": "2.0.2"
+    "latestVersion": "2.0.4"
   },
   "lockinteract": {
     "name": "LockInteract",
@@ -294,7 +294,7 @@
       "LexicalAnomaly"
     ],
     "homepage": "https://mods.vintagestory.at/mealrevariation",
-    "latestVersion": "3.1.3"
+    "latestVersion": "3.1.6"
   },
   "metalpots": {
     "name": "Metal Cooking Pots",
@@ -303,7 +303,7 @@
       "Yoldovahkriid"
     ],
     "homepage": "https://mods.vintagestory.at/metalpots",
-    "latestVersion": "1.7.9"
+    "latestVersion": "1.8.0"
   },
   "millwright": {
     "name": "Millwright",
@@ -366,7 +366,7 @@
       "Maltiez"
     ],
     "homepage": "https://mods.vintagestory.at/playermodellib",
-    "latestVersion": "1.21.1"
+    "latestVersion": "1.23.1"
   },
   "primitivesurvival": {
     "name": "Primitive Survival",
@@ -438,7 +438,7 @@
       "Wulk"
     ],
     "homepage": "https://mods.vintagestory.at/stonedoors",
-    "latestVersion": "1.0.0"
+    "latestVersion": "1.1.2"
   },
   "stonequarry": {
     "name": "Stone Quarry",
@@ -456,7 +456,7 @@
       "Trojan96"
     ],
     "homepage": "https://mods.vintagestory.at/storagetweaks",
-    "latestVersion": "1.3.2-rc.1"
+    "latestVersion": "1.3.3"
   },
   "synergy": {
     "name": "Synergy",
@@ -483,7 +483,7 @@
       "svanax"
     ],
     "homepage": "https://mods.vintagestory.at/toeclasses",
-    "latestVersion": "1.0.9"
+    "latestVersion": "1.0.10"
   },
   "vintagekinematics": {
     "name": "Vintage Kinematics",
@@ -510,7 +510,7 @@
       "YourCreator"
     ],
     "homepage": "https://mods.vintagestory.at/ecosystemflora",
-    "latestVersion": "3.6.0"
+    "latestVersion": "4.5.52"
   },
   "hydrateordiedrate": {
     "name": "Hydrate or Diedrate",
@@ -520,7 +520,7 @@
       "TheInsanityGod"
     ],
     "homepage": "https://mods.vintagestory.at/hydrateordiedrate",
-    "latestVersion": "2.4.13"
+    "latestVersion": "2.4.14"
   },
     "indappledgroves": {
     "name": "In Dappled Groves",
@@ -539,7 +539,7 @@
       "tui_smuggler"
     ],
     "homepage": "https://mods.vintagestory.at/show/mod/30143",
-    "latestVersion": "1.6.2"
+    "latestVersion": "1.6.3"
   },
     "tankardsandgoblets": {
     "name": "Tankards, Goblets and More!",
@@ -548,7 +548,7 @@
       "Emblazing"
     ],
     "homepage": "https://mods.vintagestory.at/tankardsandgoblets",
-    "latestVersion": "1.4.3"
+    "latestVersion": "1.4.4"
   },
     "reelmower": {
     "name": "Reel Mower",
@@ -557,7 +557,7 @@
       "Mike"
     ],
     "homepage": "https://mods.vintagestory.at/reelmower",
-    "latestVersion": "1.4.7"
+    "latestVersion": "1.5.8"
   },
     "chunklod": {
     "name": "Chunk LOD",
@@ -566,6 +566,6 @@
       "BiasHyperion"
     ],
     "homepage": "https://mods.vintagestory.at/chunklod",
-    "latestVersion": "1.2.0-dev.1"
+    "latestVersion": "1.2.0-dev.2"
   }
 }

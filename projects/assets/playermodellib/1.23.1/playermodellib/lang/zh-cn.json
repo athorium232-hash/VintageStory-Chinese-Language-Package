@@ -1,0 +1,54 @@
+{
+  "game:playermodel-seraph": "炽天使",
+
+  "playermodellib:tab-model": "模型",
+  "playermodellib:tab-skin": "皮肤",
+  "playermodellib:tab-class": "职业",
+
+  "playermodellib:skinpart-tab-default": "其他",
+  "playermodellib:skinpart-tab-head": "头部",
+  "playermodellib:skinpart-tab-eyes": "眼睛",
+  "playermodellib:skinpart-tab-fur": "毛皮",
+  "playermodellib:skinpart-tab-face": "面部",
+  "playermodellib:skinpart-tab-presets": "预设",
+
+  "game:modeldesc-seraph": "来历神秘的高大类人生物，最近开始出现在世界各地。",
+  "available-classes": "<strong>可用职业：</strong> ",
+  "model-size-slider": "模型大小： ",
+  "game:model-traits-title": "<strong>模型特性</strong>",
+  "game:charattribute-canGlide-1": "拥有滑翔能力",
+
+  "game:playermodelgroup-temporal": "异常",
+  "game:playermodelgroup-humans": "人类",
+  "game:playermodelgroup-beasts": "野兽",
+
+  "setting-title-0": "炽天使模型设置",
+
+  "setting-disable_custom_classes_and_traits": "禁用自定义模型职业和特性",
+  "setting-min_size_range": "最小模型大小",
+  "setting-max_size_range": "最大模型大小",
+  "setting-size_factor": "整体模型大小系数",
+  "setting-max_collision_box_vetrical": "最大碰撞箱（垂直）",
+  "setting-max_collision_box_horizontal": "最大碰撞箱（水平）",
+  "setting-max_eye_height": "最大视点高度",
+  "setting-min_eye_height": "最小视点高度",
+  "setting-scale_collider_horizontally": "随大小缩放碰撞体（水平）",
+  "setting-scale_collider_vertically": "随大小缩放碰撞体（垂直）",
+  "setting-enable_default_model": "启用炽天使模型",
+  "setting-export_shape_files": "（调试）导出衣服/护甲形状",
+  "setting-disable_model_classes_and_traits": "禁用模型职业和特性",
+  "setting-multi_thread_payer_shape_generation": "多线程生成玩家模型形状",
+  "setting-log_off_thread_tesselation_errors": "记录后台线程网格化玩家形状时的错误",
+  "setting-export_model_button": "导出当前模型为 CPM 按钮（开发中）",
+
+  "setting-comment-min_size_range": "创建角色时玩家可选择的最小模型大小。",
+  "setting-comment-max_size_range": "创建角色时玩家可选择的最大模型大小。",
+  "setting-comment-size_factor": "独立于创建角色时选择的模型大小，额外缩放玩家模型。",
+  "setting-comment-max_collision_box_vetrical": "限制碰撞箱高度，用于允许玩家通过 2 格高的开口。若不限制，碰撞体高度高于 2.0 时，玩家必须蹲下才能通过门。",
+  "setting-comment-max_collision_box_horizontal": "限制碰撞箱宽度，以允许玩家挤进 1 格宽的开口。",
+  "setting-comment-max_eye_height": "限制视点高度。如果视点高度高于 2.0，玩家通过 2 格高的开口时，视角会穿进方块。",
+  "setting-comment-export_shape_files": "在重新网格化时导出每件已装备护甲/衣服调整后的形状；装备物品可触发重新网格化。形状会导出到 ModConfig 文件夹。",
+  "setting-comment-multi_thread_payer_shape_generation": "将玩家模型生成移到单独线程，以避免玩家实体更新时卡顿，但可能引发与多线程相关的问题。",
+
+  "gui-button-hide-clothing": "隐藏衣物"
+}
