@@ -817,6 +817,22 @@
       }
     ]
   },
+  "dumbwaiter": {
+    "name": "Dumbwaiter",
+    "translation": "杂物电梯",
+    "authors": [
+      "Feyd"
+    ],
+    "homepage": "https://mods.vintagestory.at/show/mod/56618",
+    "latestVersion": "0.1.0",
+    "contributors": [
+      {
+        "name": "Cirno",
+        "url": "https://vintagestory.top/u/Cirno",
+        "role": "Chinese Translator"
+      }
+    ]
+  },
   "chunklod": {
     "name": "Chunk LOD",
     "translation": "遥远的地平线",

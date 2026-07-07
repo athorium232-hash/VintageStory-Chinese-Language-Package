@@ -1,0 +1,21 @@
+{
+  "block-dumbwaiterstation-oak-*": "Oak Dumbwaiter Station",
+  "block-dumbwaiterstation-aged-*": "Aged Dumbwaiter Station",
+  "block-dumbwaiter-shaft-open": "Dumbwaiter Shaft",
+  "block-dumbwaiter-shaft-wall": "Dumbwaiter Shaft (Wall Mount)",
+  "block-dumbwaiter-winch": "Dumbwaiter Winch",
+  "item-dumbwaiter-linker": "Dumbwaiter Rope Link",
+  "dumbwaiter-linker-anchor-info": "Anchor set at ({0}, {1}, {2})",
+  "dumbwaiter-anchor-set": "Dumbwaiter anchor set.",
+  "dumbwaiter-linked": "Dumbwaiter linked! Distance: {0} blocks.",
+  "dumbwaiter-not-linked": "This dumbwaiter isn't connected to anything.",
+  "dumbwaiter-obstructed": "Something is blocking the other end.",
+  "dumbwaiter-shaft-blocked": "The shaft is blocked — clear it to use the dumbwaiter.",
+  "dumbwaiter-too-far": "The other station is too far away.",
+  "dumbwaiter-settling": "The dumbwaiter is still settling...",
+  "dumbwaiter-in-use": "The dumbwaiter is already in motion.",
+  "dumbwaiter-not-on-platform": "Step onto the platform first.",
+  "dumbwaiter-broken-be": "This station's data was lost. Break and replace it.",
+  "dumbwaiter-link-too-far": "These stations are too far apart to link.",
+  "dumbwaiter-link-failed": "Could not link — is there a station at both ends?"
+}

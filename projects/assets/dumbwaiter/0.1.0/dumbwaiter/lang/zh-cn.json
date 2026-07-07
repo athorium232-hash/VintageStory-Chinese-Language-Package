@@ -1,0 +1,21 @@
+{
+  "block-dumbwaiterstation-oak-*": "橡木杂物电梯站",
+  "block-dumbwaiterstation-aged-*": "陈旧杂物电梯站",
+  "block-dumbwaiter-shaft-open": "杂物电梯井道",
+  "block-dumbwaiter-shaft-wall": "杂物电梯井道（壁挂式）",
+  "block-dumbwaiter-winch": "杂物电梯绞车",
+  "item-dumbwaiter-linker": "杂物电梯绳索连接器",
+  "dumbwaiter-linker-anchor-info": "锚点设置在 ({0}, {1}, {2})",
+  "dumbwaiter-anchor-set": "杂物电梯锚点已设置。",
+  "dumbwaiter-linked": "杂物电梯已连接！距离：{0} 格。",
+  "dumbwaiter-not-linked": "这个杂物电梯没有连接到任何东西。",
+  "dumbwaiter-obstructed": "有东西挡住了另一端。",
+  "dumbwaiter-shaft-blocked": "井道被堵塞——清理后使用杂物电梯。",
+  "dumbwaiter-too-far": "另一个站点太远了。",
+  "dumbwaiter-settling": "杂物电梯还在稳定中……",
+  "dumbwaiter-in-use": "杂物电梯已在运行中。",
+  "dumbwaiter-not-on-platform": "请先站到平台上。",
+  "dumbwaiter-broken-be": "该站点的数据已丢失。请敲掉后重新放置。",
+  "dumbwaiter-link-too-far": "这两个站点距离太远，无法连接。",
+  "dumbwaiter-link-failed": "无法连接——两端都有站点吗？"
+}
