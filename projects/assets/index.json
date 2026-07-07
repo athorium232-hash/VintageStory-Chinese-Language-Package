@@ -1002,12 +1002,28 @@
     "contributors": [
       {
         "name": "Cirno",
-        "url": "https://vintagestory.top/u/cirno/summary",
+        "url": "https://vintagestory.top/u/Cirno",
         "role": "Chinese Translator"
       }
     ],
     "homepage": "https://mods.vintagestory.at/cmicebox",
     "latestVersion": "2.0.1"
+  },
+  "soldierspyforgeworks": {
+    "name": "SoldierSpy - Forgeworks",
+    "translation": "SoldierSpy：锻造工坊",
+    "authors": [
+      "Wyntr"
+    ],
+    "homepage": "https://mods.vintagestory.at/show/mod/57715",
+    "latestVersion": "1.0.1",
+    "contributors": [
+      {
+        "name": "Cirno",
+        "url": "https://vintagestory.top/u/Cirno",
+        "role": "Chinese Translator"
+      }
+    ]
   },
     "chunklod": {
     "name": "Chunk LOD",
