@@ -801,6 +801,22 @@
       }
     ]
   },
+  "logging-expanded": {
+    "name": "Logging Expanded",
+    "translation": "伐木扩展",
+    "authors": [
+      "Exmortis"
+    ],
+    "homepage": "https://mods.vintagestory.at/show/mod/55535",
+    "latestVersion": "0.2.6",
+    "contributors": [
+      {
+        "name": "Cirno",
+        "url": "https://vintagestory.top/u/Cirno",
+        "role": "Chinese Translator"
+      }
+    ]
+  },
   "chunklod": {
     "name": "Chunk LOD",
     "translation": "遥远的地平线",
