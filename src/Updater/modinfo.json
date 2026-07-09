@@ -1,8 +1,8 @@
 {
   "type": "code",
   "modid": "vscnlangpackupdater",
-  "name": "VSCN Language Pack Updater",
-  "description": "Downloads the latest VSCN Vintage Story Chinese Language Pack from GitHub Releases.",
+  "name": "VSCN 汉化包自动更新器",
+  "description": "自动通过加速通道检查并下载最新版 VSCN Vintage Story 汉化包。",
   "authors": [
     "VSCN-Studio"
   ],

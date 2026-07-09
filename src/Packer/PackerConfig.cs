@@ -5,7 +5,7 @@ namespace Packer;
 public sealed class PackerConfig
 {
     [JsonPropertyName("packageName")]
-    public string PackageName { get; set; } = "VSCN Vintage Story Chinese Language Pack";
+    public string PackageName { get; set; } = "VSCN Vintage Story 汉化包";
 
     [JsonPropertyName("packageVersion")]
     public string PackageVersion { get; set; } = "0.0.0";
@@ -45,7 +45,7 @@ public sealed class PackerConfig
 
     public void ApplyDefaults()
     {
-        PackageName = NormalizeOrDefault(PackageName, "VSCN Vintage Story Chinese Language Pack");
+        PackageName = NormalizeOrDefault(PackageName, "VSCN Vintage Story 汉化包");
         PackageVersion = NormalizeOrDefault(PackageVersion, "0.0.0");
         Description = NormalizeOrDefault(Description, "聚合简体中文语言包，覆盖已安装的受支持 Vintage Story 模组。");
         Authors = NormalizeList(Authors, "VSCN-Studio");

@@ -22,7 +22,7 @@ public sealed class LanguagePackUpdaterModSystem : ModSystem
         var config = LoadConfig(api);
         if (!config.Enabled)
         {
-            api.Logger.Notification("[VSCN Language Pack Updater] Auto update is disabled.");
+            api.Logger.Notification("[VSCN 汉化包更新器] 自动更新已关闭。");
             return;
         }
 
@@ -78,7 +78,10 @@ public sealed class LanguagePackUpdaterModSystem : ModSystem
         {
             var currentVersion = DetectInstalledVersion(config);
             using var releaseClient = new GitHubReleaseClient(TimeSpan.FromSeconds(config.HttpTimeoutSeconds));
-            var latestRelease = await releaseClient.GetLatestReleaseAsync(config.ReleasesApiUrl, cancellationToken);
+            var latestRelease = await releaseClient.GetLatestReleaseAsync(
+                config.CreateGithubUrls(config.ReleasesApiUrl),
+                (url, message) => LogChannelFailure("获取发布信息", url, message),
+                cancellationToken);
 
             if (!PackageVersion.TryParse(latestRelease.TagName, out var latestVersion) || latestVersion is null)
             {
@@ -95,7 +98,7 @@ public sealed class LanguagePackUpdaterModSystem : ModSystem
                     PostChatMessage($"[VSCN] 汉化包已是最新版本：{currentVersion}");
                 }
 
-                api.Logger.Notification("[VSCN Language Pack Updater] Language pack is up to date: {0}.", currentVersion);
+                api.Logger.Notification("[VSCN 汉化包更新器] 汉化包已是最新版本：{0}。", currentVersion);
                 return;
             }
 
@@ -111,7 +114,7 @@ public sealed class LanguagePackUpdaterModSystem : ModSystem
                 }
 
                 PostChatMessage($"[VSCN] 已找到新版汉化包 {latestVersion}，请重启游戏生效。");
-                api.Logger.Notification("[VSCN Language Pack Updater] Latest language pack already exists at {0}.", targetPath);
+                api.Logger.Notification("[VSCN 汉化包更新器] 已存在最新版汉化包：{0}。", targetPath);
                 return;
             }
 
@@ -121,7 +124,11 @@ public sealed class LanguagePackUpdaterModSystem : ModSystem
                 File.Delete(tempPath);
             }
 
-            await releaseClient.DownloadFileAsync(asset.DownloadUrl, tempPath, cancellationToken);
+            var usedDownloadUrl = await releaseClient.DownloadFileAsync(
+                config.CreateGithubUrls(asset.DownloadUrl),
+                tempPath,
+                (url, message) => LogChannelFailure("下载汉化包", url, message),
+                cancellationToken);
             PackageInstaller.ValidateLanguagePackZip(tempPath, latestVersion);
             PackageInstaller.InstallDownloadedPackage(tempPath, targetPath);
 
@@ -132,14 +139,18 @@ public sealed class LanguagePackUpdaterModSystem : ModSystem
 
             var previousText = currentVersion is null ? "未安装" : currentVersion.ToString();
             PostChatMessage($"[VSCN] 汉化包已更新：{previousText} -> {latestVersion}，请重启游戏生效。");
-            api.Logger.Notification("[VSCN Language Pack Updater] Updated language pack from {0} to {1}.", previousText, latestVersion);
+            api.Logger.Notification(
+                "[VSCN 汉化包更新器] 汉化包已从 {0} 更新到 {1}，下载通道：{2}。",
+                previousText,
+                latestVersion,
+                DescribeChannel(usedDownloadUrl));
         }
         catch (OperationCanceledException)
         {
         }
         catch (Exception ex)
         {
-            api.Logger.Warning("[VSCN Language Pack Updater] Update check failed: {0}", ex);
+            api.Logger.Warning("[VSCN 汉化包更新器] 更新检查失败：{0}", ex);
             if (config.NotifyOnFailure)
             {
                 PostChatMessage("[VSCN] 汉化包自动更新检查失败：" + ex.Message);
@@ -212,6 +223,16 @@ public sealed class LanguagePackUpdaterModSystem : ModSystem
 
     private void LogCleanupFailure(string message)
     {
-        api?.Logger.Warning("[VSCN Language Pack Updater] Could not remove old language pack: {0}", message);
+        api?.Logger.Warning("[VSCN 汉化包更新器] 无法移除旧汉化包：{0}", message);
+    }
+
+    private void LogChannelFailure(string operation, string url, string message)
+    {
+        api?.Logger.Warning("[VSCN 汉化包更新器] {0}通道失败（{1}）：{2}", operation, DescribeChannel(url), message);
+    }
+
+    private static string DescribeChannel(string url)
+    {
+        return Uri.TryCreate(url, UriKind.Absolute, out var uri) ? uri.Host : "自定义通道";
     }
 }

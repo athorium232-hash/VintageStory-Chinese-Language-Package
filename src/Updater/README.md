@@ -1,34 +1,34 @@
-# VSCN Language Pack Updater
+# VSCN 汉化包自动更新器
 
-`vscnlangpackupdater` is a small client-side code mod that keeps the VSCN Vintage Story Chinese Language Pack up to date from GitHub Releases.
+`vscnlangpackupdater` 是一个客户端代码模组，用于在游戏启动后自动检查并下载最新版 VSCN Vintage Story 汉化包。
 
-On client startup it requests:
+启动后它会请求最新 Release 信息：
 
 ```text
 https://api.github.com/repos/vscn-studio/VintageStory-Chinese-Language-Package/releases/latest
 ```
 
-If the release tag is newer than the loaded `vscnlangpack` version, it downloads the matching `VintageStory-Chinese-Language-Package-<version>.zip` asset into the player's `Mods` directory and asks the player to restart the game.
+默认会先通过 GitHub 加速通道访问 Release API 和下载地址，所有加速通道失败后再回退到原始 GitHub 地址。如果最新 Release 版本高于当前已加载的 `vscnlangpack` 版本，它会把匹配的 `VintageStory-Chinese-Language-Package-<version>.zip` 下载到玩家的 `Mods` 目录，并提示玩家重启游戏生效。
 
-## Build
+## 构建
 
-Set `VINTAGE_STORY` to the Vintage Story install directory that contains `VintagestoryAPI.dll`, then run. Vintage Story 1.22.x builds currently require a .NET 10 SDK for code mods.
+将 `VINTAGE_STORY` 设置为包含 `VintagestoryAPI.dll` 的 Vintage Story 安装目录，然后运行。面向 Vintage Story 1.22.x 的代码模组目前需要 .NET 10 SDK。
 
 ```powershell
 dotnet build src/Updater/Updater.csproj -c Release
 ```
 
-The mod files are copied to:
+模组文件会复制到：
 
 ```text
 src/Updater/bin/Release/mod/
 ```
 
-Zip the contents of that `mod` directory when publishing the updater mod.
+发布自动更新器时，将该 `mod` 目录中的内容打包为 zip。
 
-## Config
+## 配置
 
-The mod writes `ModConfig/vscnlangpackupdater.json` on first launch.
+模组首次启动时会写入 `ModConfig/vscnlangpackupdater.json`。
 
 ```json
 {
@@ -39,7 +39,14 @@ The mod writes `ModConfig/vscnlangpackupdater.json` on first launch.
   "notifyOnFailure": true,
   "deleteOldPackages": true,
   "releasesApiUrl": "https://api.github.com/repos/vscn-studio/VintageStory-Chinese-Language-Package/releases/latest",
+  "githubUrlTemplates": [
+    "https://gh-proxy.com/{url}",
+    "https://ghproxy.net/{url}",
+    "{url}"
+  ],
   "assetFilePrefix": "VintageStory-Chinese-Language-Package-",
   "assetFileSuffix": ".zip"
 }
 ```
+
+`githubUrlTemplates` 同时用于 Release API 和语言包 zip 下载。`{url}` 会替换为原始 GitHub 地址，`{escapedUrl}` 会替换为 URL 编码后的原始地址；如果某个模板不包含占位符，会直接把原始地址拼到模板末尾。建议保留 `{url}` 作为最后兜底通道。

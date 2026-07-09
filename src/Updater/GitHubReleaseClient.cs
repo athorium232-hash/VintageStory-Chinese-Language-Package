@@ -17,7 +17,33 @@ internal sealed class GitHubReleaseClient : IDisposable
         httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/vnd.github+json"));
     }
 
-    public async Task<GitHubRelease> GetLatestReleaseAsync(string apiUrl, CancellationToken cancellationToken)
+    public async Task<GitHubRelease> GetLatestReleaseAsync(
+        IReadOnlyList<string> apiUrls,
+        Action<string, string>? onAttemptFailed,
+        CancellationToken cancellationToken)
+    {
+        var failureCount = 0;
+        foreach (var apiUrl in NormalizeCandidateUrls(apiUrls))
+        {
+            try
+            {
+                return await GetLatestReleaseFromUrlAsync(apiUrl, cancellationToken);
+            }
+            catch (OperationCanceledException) when (cancellationToken.IsCancellationRequested)
+            {
+                throw;
+            }
+            catch (Exception ex)
+            {
+                failureCount++;
+                onAttemptFailed?.Invoke(apiUrl, ex.Message);
+            }
+        }
+
+        throw CreateAllChannelsFailedException("获取发布信息", failureCount);
+    }
+
+    private async Task<GitHubRelease> GetLatestReleaseFromUrlAsync(string apiUrl, CancellationToken cancellationToken)
     {
         using var response = await httpClient.GetAsync(apiUrl, HttpCompletionOption.ResponseHeadersRead, cancellationToken);
         response.EnsureSuccessStatusCode();
@@ -57,7 +83,36 @@ internal sealed class GitHubReleaseClient : IDisposable
         return new GitHubRelease(tagName, assets);
     }
 
-    public async Task DownloadFileAsync(string url, string destinationPath, CancellationToken cancellationToken)
+    public async Task<string> DownloadFileAsync(
+        IReadOnlyList<string> urls,
+        string destinationPath,
+        Action<string, string>? onAttemptFailed,
+        CancellationToken cancellationToken)
+    {
+        var failureCount = 0;
+        foreach (var url in NormalizeCandidateUrls(urls))
+        {
+            try
+            {
+                await DownloadFileFromUrlAsync(url, destinationPath, cancellationToken);
+                return url;
+            }
+            catch (OperationCanceledException) when (cancellationToken.IsCancellationRequested)
+            {
+                throw;
+            }
+            catch (Exception ex)
+            {
+                failureCount++;
+                TryDeleteFile(destinationPath);
+                onAttemptFailed?.Invoke(url, ex.Message);
+            }
+        }
+
+        throw CreateAllChannelsFailedException("下载汉化包", failureCount);
+    }
+
+    private async Task DownloadFileFromUrlAsync(string url, string destinationPath, CancellationToken cancellationToken)
     {
         using var response = await httpClient.GetAsync(url, HttpCompletionOption.ResponseHeadersRead, cancellationToken);
         response.EnsureSuccessStatusCode();
@@ -70,6 +125,34 @@ internal sealed class GitHubReleaseClient : IDisposable
     public void Dispose()
     {
         httpClient.Dispose();
+    }
+
+    private static IEnumerable<string> NormalizeCandidateUrls(IEnumerable<string> urls)
+    {
+        return urls
+            .Where(url => !string.IsNullOrWhiteSpace(url))
+            .Select(url => url.Trim())
+            .Distinct(StringComparer.OrdinalIgnoreCase);
+    }
+
+    private static InvalidOperationException CreateAllChannelsFailedException(string operation, int failureCount)
+    {
+        return new InvalidOperationException(
+            $"{operation}所有 {failureCount} 个通道均失败，请检查网络或更换加速通道。");
+    }
+
+    private static void TryDeleteFile(string path)
+    {
+        try
+        {
+            if (File.Exists(path))
+            {
+                File.Delete(path);
+            }
+        }
+        catch
+        {
+        }
     }
 
     private static string GetRequiredString(JsonElement element, string propertyName)
