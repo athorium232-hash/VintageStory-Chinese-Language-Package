@@ -16,6 +16,10 @@ public sealed class UpdaterConfig
 
     public string ReleasesApiUrl { get; set; } = UpdaterConstants.ReleasesApiUrl;
 
+    public string ReleasesLatestUrl { get; set; } = UpdaterConstants.ReleasesLatestUrl;
+
+    public string ReleaseAssetDownloadUrlTemplate { get; set; } = UpdaterConstants.ReleaseAssetDownloadUrlTemplate;
+
     public string[] GithubUrlTemplates { get; set; } = UpdaterConstants.GithubUrlTemplates.ToArray();
 
     public string AssetFilePrefix { get; set; } = UpdaterConstants.LanguagePackAssetPrefix;
@@ -37,6 +41,16 @@ public sealed class UpdaterConfig
         if (string.IsNullOrWhiteSpace(ReleasesApiUrl))
         {
             ReleasesApiUrl = UpdaterConstants.ReleasesApiUrl;
+        }
+
+        if (string.IsNullOrWhiteSpace(ReleasesLatestUrl))
+        {
+            ReleasesLatestUrl = UpdaterConstants.ReleasesLatestUrl;
+        }
+
+        if (string.IsNullOrWhiteSpace(ReleaseAssetDownloadUrlTemplate))
+        {
+            ReleaseAssetDownloadUrlTemplate = UpdaterConstants.ReleaseAssetDownloadUrlTemplate;
         }
 
         GithubUrlTemplates = NormalizeList(GithubUrlTemplates, UpdaterConstants.GithubUrlTemplates);
@@ -73,6 +87,19 @@ public sealed class UpdaterConfig
         return urls.Length == 0 ? [normalizedOriginalUrl] : urls;
     }
 
+    public string CreateReleaseAssetDownloadUrl(string tagName, string assetName)
+    {
+        var template = string.IsNullOrWhiteSpace(ReleaseAssetDownloadUrlTemplate)
+            ? UpdaterConstants.ReleaseAssetDownloadUrlTemplate
+            : ReleaseAssetDownloadUrlTemplate.Trim();
+
+        return template
+            .Replace("{escapedTag}", Uri.EscapeDataString(tagName), StringComparison.OrdinalIgnoreCase)
+            .Replace("{tag}", tagName, StringComparison.OrdinalIgnoreCase)
+            .Replace("{escapedAsset}", Uri.EscapeDataString(assetName), StringComparison.OrdinalIgnoreCase)
+            .Replace("{asset}", assetName, StringComparison.OrdinalIgnoreCase);
+    }
+
     private static string CreateGitHubUrl(string template, string originalUrl)
     {
         var normalizedTemplate = string.IsNullOrWhiteSpace(template) ? "{url}" : template.Trim();
@@ -96,11 +123,18 @@ public sealed class UpdaterConfig
 
     private static string[] NormalizeList(IEnumerable<string>? values, params string[] fallback)
     {
+        var deprecated = new HashSet<string>(UpdaterConstants.DeprecatedGithubUrlTemplates, StringComparer.OrdinalIgnoreCase);
         var normalized = values?
             .Where(value => !string.IsNullOrWhiteSpace(value))
             .Select(value => value.Trim())
+            .Where(value => !deprecated.Contains(value))
             .Distinct(StringComparer.OrdinalIgnoreCase)
             .ToArray();
+
+        if (IsLegacyDefaultGithubUrlTemplates(normalized))
+        {
+            return fallback.ToArray();
+        }
 
         if (normalized is { Length: > 0 })
         {
@@ -108,5 +142,19 @@ public sealed class UpdaterConfig
         }
 
         return fallback.ToArray();
+    }
+
+    private static bool IsLegacyDefaultGithubUrlTemplates(IReadOnlyList<string>? values)
+    {
+        if (values is null || values.Count != UpdaterConstants.LegacyGithubUrlTemplates.Length)
+        {
+            return false;
+        }
+
+        return values
+            .Order(StringComparer.OrdinalIgnoreCase)
+            .SequenceEqual(
+                UpdaterConstants.LegacyGithubUrlTemplates.Order(StringComparer.OrdinalIgnoreCase),
+                StringComparer.OrdinalIgnoreCase);
     }
 }

@@ -19,24 +19,55 @@ internal sealed class GitHubReleaseClient : IDisposable
 
     public async Task<GitHubRelease> GetLatestReleaseAsync(
         IReadOnlyList<string> apiUrls,
+        IReadOnlyList<string> latestReleaseUrls,
+        Func<string, IReadOnlyList<GitHubReleaseAsset>> createFallbackAssets,
         Action<string, string>? onAttemptFailed,
         CancellationToken cancellationToken)
     {
         var failureCount = 0;
-        foreach (var apiUrl in NormalizeCandidateUrls(apiUrls))
+        var apiCandidates = NormalizeCandidateUrls(apiUrls).ToArray();
+        var latestReleaseCandidates = NormalizeCandidateUrls(latestReleaseUrls).ToArray();
+        var candidateCount = Math.Max(apiCandidates.Length, latestReleaseCandidates.Length);
+
+        for (var index = 0; index < candidateCount; index++)
         {
-            try
+            if (index < apiCandidates.Length)
             {
-                return await GetLatestReleaseFromUrlAsync(apiUrl, cancellationToken);
+                var apiUrl = apiCandidates[index];
+                try
+                {
+                    return await GetLatestReleaseFromUrlAsync(apiUrl, cancellationToken);
+                }
+                catch (OperationCanceledException) when (cancellationToken.IsCancellationRequested)
+                {
+                    throw;
+                }
+                catch (Exception ex)
+                {
+                    failureCount++;
+                    onAttemptFailed?.Invoke(apiUrl, ex.Message);
+                }
             }
-            catch (OperationCanceledException) when (cancellationToken.IsCancellationRequested)
+
+            if (index < latestReleaseCandidates.Length)
             {
-                throw;
-            }
-            catch (Exception ex)
-            {
-                failureCount++;
-                onAttemptFailed?.Invoke(apiUrl, ex.Message);
+                var latestReleaseUrl = latestReleaseCandidates[index];
+                try
+                {
+                    return await GetLatestReleaseFromRedirectAsync(
+                        latestReleaseUrl,
+                        createFallbackAssets,
+                        cancellationToken);
+                }
+                catch (OperationCanceledException) when (cancellationToken.IsCancellationRequested)
+                {
+                    throw;
+                }
+                catch (Exception ex)
+                {
+                    failureCount++;
+                    onAttemptFailed?.Invoke(latestReleaseUrl, ex.Message);
+                }
             }
         }
 
@@ -78,6 +109,27 @@ internal sealed class GitHubReleaseClient : IDisposable
 
                 assets.Add(new GitHubReleaseAsset(name.Trim(), url.Trim()));
             }
+        }
+
+        return new GitHubRelease(tagName, assets);
+    }
+
+    private async Task<GitHubRelease> GetLatestReleaseFromRedirectAsync(
+        string latestReleaseUrl,
+        Func<string, IReadOnlyList<GitHubReleaseAsset>> createFallbackAssets,
+        CancellationToken cancellationToken)
+    {
+        using var response = await httpClient.GetAsync(latestReleaseUrl, HttpCompletionOption.ResponseHeadersRead, cancellationToken);
+        response.EnsureSuccessStatusCode();
+
+        var finalUrl = response.RequestMessage?.RequestUri?.ToString();
+        var tagName = ExtractTagNameFromReleaseUrl(finalUrl)
+            ?? throw new InvalidOperationException("Latest release redirect did not contain a release tag.");
+
+        var assets = createFallbackAssets(tagName);
+        if (assets.Count == 0)
+        {
+            throw new InvalidOperationException($"Could not infer release assets from tag '{tagName}'.");
         }
 
         return new GitHubRelease(tagName, assets);
@@ -153,6 +205,27 @@ internal sealed class GitHubReleaseClient : IDisposable
         catch
         {
         }
+    }
+
+    private static string? ExtractTagNameFromReleaseUrl(string? url)
+    {
+        if (string.IsNullOrWhiteSpace(url))
+        {
+            return null;
+        }
+
+        var decoded = Uri.UnescapeDataString(url);
+        const string marker = "/releases/tag/";
+        var markerIndex = decoded.IndexOf(marker, StringComparison.OrdinalIgnoreCase);
+        if (markerIndex < 0)
+        {
+            return null;
+        }
+
+        var start = markerIndex + marker.Length;
+        var end = decoded.IndexOfAny(['?', '#', '/'], start);
+        var tagName = end < 0 ? decoded[start..] : decoded[start..end];
+        return string.IsNullOrWhiteSpace(tagName) ? null : tagName.Trim();
     }
 
     private static string GetRequiredString(JsonElement element, string propertyName)

@@ -226,13 +226,19 @@ https://api.github.com/repos/vscn-studio/VintageStory-Chinese-Language-Package/r
 默认加速通道配置位于 `ModConfig/vscnlangpackupdater.json`：
 
 ```json
+"releasesLatestUrl": "https://github.com/vscn-studio/VintageStory-Chinese-Language-Package/releases/latest",
+"releaseAssetDownloadUrlTemplate": "https://github.com/vscn-studio/VintageStory-Chinese-Language-Package/releases/download/{tag}/{asset}",
 "githubUrlTemplates": [
   "https://ghproxy.net/{url}",
+  "https://v6.gh-proxy.com/{url}",
+  "https://hk.gh-proxy.com/{url}",
+  "https://cdn.gh-proxy.com/{url}",
+  "https://edgeone.gh-proxy.com/{url}",
   "{url}"
 ]
 ```
 
-`{url}` 表示原始 GitHub 地址，`{escapedUrl}` 表示 URL 编码后的原始地址。玩家可以按自己的网络情况替换或增删加速源，建议保留 `{url}` 作为最后兜底通道。
+`{url}` 表示原始 GitHub 地址，`{escapedUrl}` 表示 URL 编码后的原始地址。玩家可以按自己的网络情况替换或增删加速源，建议保留 `{url}` 作为最后兜底通道。如果 GitHub API 无法访问，更新器会退回到 `releasesLatestUrl` 的跳转地址解析最新标签，再用 `releaseAssetDownloadUrlTemplate` 拼出语言包下载地址。默认通道优先使用 `ghproxy.net`，并参考 MVL 增加了 `v6`、`hk`、`cdn`、`edgeone` 四条 `gh-proxy.com` 子线路作为下载备用。
 
 构建 updater 时需要将 `VINTAGE_STORY` 指向包含 `VintagestoryAPI.dll` 的游戏安装目录：
 

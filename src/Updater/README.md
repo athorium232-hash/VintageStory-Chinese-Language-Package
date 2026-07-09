@@ -39,8 +39,14 @@ src/Updater/bin/Release/mod/
   "notifyOnFailure": true,
   "deleteOldPackages": true,
   "releasesApiUrl": "https://api.github.com/repos/vscn-studio/VintageStory-Chinese-Language-Package/releases/latest",
+  "releasesLatestUrl": "https://github.com/vscn-studio/VintageStory-Chinese-Language-Package/releases/latest",
+  "releaseAssetDownloadUrlTemplate": "https://github.com/vscn-studio/VintageStory-Chinese-Language-Package/releases/download/{tag}/{asset}",
   "githubUrlTemplates": [
     "https://ghproxy.net/{url}",
+    "https://v6.gh-proxy.com/{url}",
+    "https://hk.gh-proxy.com/{url}",
+    "https://cdn.gh-proxy.com/{url}",
+    "https://edgeone.gh-proxy.com/{url}",
     "{url}"
   ],
   "assetFilePrefix": "VintageStory-Chinese-Language-Package-",
@@ -48,4 +54,4 @@ src/Updater/bin/Release/mod/
 }
 ```
 
-`githubUrlTemplates` 同时用于 Release API 和语言包 zip 下载。`{url}` 会替换为原始 GitHub 地址，`{escapedUrl}` 会替换为 URL 编码后的原始地址；如果某个模板不包含占位符，会直接把原始地址拼到模板末尾。建议保留 `{url}` 作为最后兜底通道。
+`githubUrlTemplates` 同时用于 Release API、最新版跳转页和语言包 zip 下载。`{url}` 会替换为原始 GitHub 地址，`{escapedUrl}` 会替换为 URL 编码后的原始地址；如果某个模板不包含占位符，会直接把原始地址拼到模板末尾。建议保留 `{url}` 作为最后兜底通道。如果 GitHub API 无法访问，更新器会退回到 `releasesLatestUrl` 的跳转地址解析最新标签，再用 `releaseAssetDownloadUrlTemplate` 拼出语言包下载地址。默认通道优先使用 `ghproxy.net`，并参考 MVL 增加了 `v6`、`hk`、`cdn`、`edgeone` 四条 `gh-proxy.com` 子线路作为下载备用。

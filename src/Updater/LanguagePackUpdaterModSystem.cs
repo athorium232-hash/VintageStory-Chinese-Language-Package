@@ -80,6 +80,8 @@ public sealed class LanguagePackUpdaterModSystem : ModSystem
             using var releaseClient = new GitHubReleaseClient(TimeSpan.FromSeconds(config.HttpTimeoutSeconds));
             var latestRelease = await releaseClient.GetLatestReleaseAsync(
                 config.CreateGithubUrls(config.ReleasesApiUrl),
+                config.CreateGithubUrls(config.ReleasesLatestUrl),
+                tagName => CreateFallbackReleaseAssets(tagName, config),
                 (url, message) => LogChannelFailure("获取发布信息", url, message),
                 cancellationToken);
 
@@ -202,6 +204,18 @@ public sealed class LanguagePackUpdaterModSystem : ModSystem
             .OrderByDescending(item => item.Version)
             .Select(item => item.Asset)
             .FirstOrDefault();
+    }
+
+    private static IReadOnlyList<GitHubReleaseAsset> CreateFallbackReleaseAssets(string tagName, UpdaterConfig config)
+    {
+        if (!PackageVersion.TryParse(tagName, out var latestVersion) || latestVersion is null)
+        {
+            return [];
+        }
+
+        var assetName = config.AssetFilePrefix + latestVersion + config.AssetFileSuffix;
+        var downloadUrl = config.CreateReleaseAssetDownloadUrl(tagName, assetName);
+        return [new GitHubReleaseAsset(assetName, downloadUrl)];
     }
 
     private void PostChatMessage(string message)
