@@ -1,0 +1,13 @@
+{
+    "toggle": "切换",
+    "enabled": "已启用",
+    "disabled": "已禁用",
+    "start": "开始",
+    "end": "结束",
+    "no-reсipe": "该模组没有此物品的配方，或设置了错误的模式。",
+    "no-hammer": "快捷栏中未找到锤子",
+    "interrupted": "配方已重置。",
+    "ingot-forging": "从锭锻造",
+    "plate-forging": "从板锻造",
+    "speed-forging": "锻造速度"
+}

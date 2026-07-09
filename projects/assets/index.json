@@ -981,5 +981,21 @@
         "role": "Chinese Translator"
       }
     ]
+  },
+  "automatic-forging": {
+    "name": "Automatic Forging",
+    "translation": "自动打铁",
+    "authors": [
+      "ShuriKIT"
+    ],
+    "homepage": "https://mods.vintagestory.at/show/mod/44137",
+    "latestVersion": "1.1.2",
+    "contributors": [
+      {
+        "name": "HansJack",
+        "url": "https://vintagestory.top/u/HansJack",
+        "role": "Chinese Translator"
+      }
+    ]
   }
 }

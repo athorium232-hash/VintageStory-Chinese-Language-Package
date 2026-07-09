@@ -1,0 +1,13 @@
+﻿{
+    "toggle": "Toggle",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "start": "Start",
+    "end": "End",
+    "no-reсipe": "The mod does not have a recipe for this item or the wrong mode is set.",
+    "no-hammer": "Hammer not found in hotbar",
+    "interrupted": "The recipe has been reset.",
+    "ingot-forging": "From ingot",
+    "plate-forging": "From plate",
+    "speed-forging": "Forging speed"
+}
