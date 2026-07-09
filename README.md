@@ -96,7 +96,7 @@ projects/assets/<mod-name>/<mod-version>/<modid>/lang/en.json
        "contributors": [
          {
            "name": "HansJack",
-           "url": "https://github.com/TGU-HansJack",
+           "url": "https://vintagestory.top/u/HansJack",
            "role": "Chinese Translator"
          }
        ],

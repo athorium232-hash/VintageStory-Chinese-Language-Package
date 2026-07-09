@@ -541,7 +541,7 @@ public sealed class PackerTests
                 "contributors": [
                   {
                     "name": "HansJack",
-                    "url": "https://github.com/TGU-HansJack",
+                    "url": "https://vintagestory.top/u/HansJack",
                     "role": "Chinese Translator"
                   }
                 ],
@@ -571,11 +571,11 @@ public sealed class PackerTests
         Assert.Equal(0, exitCode);
         Assert.Equal(string.Empty, stderr.ToString());
         Assert.Contains(
-            "| [更好的战利品](https://mods.vintagestory.at/betterloot) | [Better Loot](https://mods.vintagestory.at/betterloot) | betterloot | [HansJack](https://github.com/TGU-HansJack) (Chinese Translator) | 2.0.3 |",
+            "| [更好的战利品](https://mods.vintagestory.at/betterloot) | [Better Loot](https://mods.vintagestory.at/betterloot) | betterloot | [HansJack](https://vintagestory.top/u/HansJack) (Chinese Translator) | 2.0.3 |",
             stdout.ToString(),
             StringComparison.Ordinal);
         Assert.Contains(
-            "| [HansJack](https://github.com/TGU-HansJack) | Chinese Translator | 1 |",
+            "| [HansJack](https://vintagestory.top/u/HansJack) | Chinese Translator | 1 |",
             stdout.ToString(),
             StringComparison.Ordinal);
     }
