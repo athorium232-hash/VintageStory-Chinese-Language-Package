@@ -227,7 +227,6 @@ https://api.github.com/repos/vscn-studio/VintageStory-Chinese-Language-Package/r
 
 ```json
 "githubUrlTemplates": [
-  "https://gh-proxy.com/{url}",
   "https://ghproxy.net/{url}",
   "{url}"
 ]

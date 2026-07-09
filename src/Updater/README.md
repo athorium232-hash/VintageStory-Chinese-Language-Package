@@ -40,7 +40,6 @@ src/Updater/bin/Release/mod/
   "deleteOldPackages": true,
   "releasesApiUrl": "https://api.github.com/repos/vscn-studio/VintageStory-Chinese-Language-Package/releases/latest",
   "githubUrlTemplates": [
-    "https://gh-proxy.com/{url}",
     "https://ghproxy.net/{url}",
     "{url}"
   ],

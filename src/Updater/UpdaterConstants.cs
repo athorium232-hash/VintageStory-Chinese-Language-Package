@@ -12,7 +12,6 @@ internal static class UpdaterConstants
 
     public static readonly string[] GithubUrlTemplates =
     [
-        "https://gh-proxy.com/{url}",
         "https://ghproxy.net/{url}",
         "{url}"
     ];
