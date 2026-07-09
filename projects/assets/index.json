@@ -997,5 +997,21 @@
         "role": "Chinese Translator"
       }
     ]
+  },
+  "improved-handbook-recipe-helper": {
+    "name": "Improved Handbook Recipe Helper",
+    "translation": "改进手册配方",
+    "authors": [
+      "Bannta"
+    ],
+    "homepage": "https://mods.vintagestory.at/show/mod/47215",
+    "latestVersion": "1222.0.2",
+    "contributors": [
+      {
+        "name": "HansJack",
+        "url": "https://vintagestory.top/u/HansJack",
+        "role": "Chinese Translator"
+      }
+    ]
   }
 }
