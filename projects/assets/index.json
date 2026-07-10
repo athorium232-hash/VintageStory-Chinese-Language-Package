@@ -1029,5 +1029,21 @@
         "role": "Chinese Translator"
       }
     ]
+  },
+  "canjewelry": {
+    "name": "C&N Jewelry",
+    "translation": "珠宝匠",
+    "authors": [
+      "KenigVovan"
+    ],
+    "homepage": "https://mods.vintagestory.at/canjewelry",
+    "latestVersion": "0.6.19",
+    "contributors": [
+      {
+        "name": "llyyzzzz",
+        "url": "https://vintagestory.top/u/llyyzzzz",
+        "role": "Chinese Translator"
+      }
+    ]
   }
 }
