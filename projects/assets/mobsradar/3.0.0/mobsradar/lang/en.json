@@ -1,0 +1,24 @@
+{
+    "ToggleRadar": "Show/Hide 'Mobs Radar'",
+    "UpdateRadarConfig": "(Mobs Radar) Update configuration",
+    "game:maplayer-creatures": "Creatures",
+
+    "Config.Setting.Add": "Add",
+    "Config.Setting.Classes": "Classes",
+    "Config.Setting.Color": "Color",
+    "Config.Setting.EnableIcon": "Enable Icon",
+    "Config.Setting.HorizontalRadius": "Horizontal Radius",
+    "Config.Setting.Icon": "Icon",
+    "Config.Setting.MarkerProperties": "Marker Properties",
+    "Config.Setting.Markers": "Markers",
+    "Config.Setting.RefreshRate": "Refresh Rate (in milliseconds)",
+    "Config.Setting.Remove": "Remove",
+    "Config.Setting.Size": "Size",
+    "Config.Setting.Types": "Types",
+    "Config.Setting.VerticalRadius": "Vertical Radius",
+    "Config.Setting.Visible": "Visible",
+    "Config.Text.Icon": "Icons require full asset path to svg icon, set to null to disable. For example, game:textures/icons/checkmark.svg",
+    "Config.Text.Markers": "\"dead\" and \"pet\" are used for not configurable states of entities. You can add your own groups",
+    "Config.Text.RefreshRate": "How often to check for alive status, visibility, horizontal and vertical radius of markers (default: 1000, disable: -1)",
+    "Config.Text.SupportsWildcard": "supports wildcards and regexes"
+}

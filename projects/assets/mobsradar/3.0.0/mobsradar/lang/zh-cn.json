@@ -1,0 +1,24 @@
+{
+    "ToggleRadar": "显示/隐藏「生物雷达」",
+    "UpdateRadarConfig": "（生物雷达）更新配置",
+    "game:maplayer-creatures": "生物",
+
+    "Config.Setting.Add": "添加",
+    "Config.Setting.Classes": "类名",
+    "Config.Setting.Color": "颜色",
+    "Config.Setting.EnableIcon": "启用图标",
+    "Config.Setting.HorizontalRadius": "水平半径",
+    "Config.Setting.Icon": "图标路径",
+    "Config.Setting.MarkerProperties": "标记属性",
+    "Config.Setting.Markers": "标记分组",
+    "Config.Setting.RefreshRate": "刷新间隔（毫秒）",
+    "Config.Setting.Remove": "移除",
+    "Config.Setting.Size": "大小",
+    "Config.Setting.Types": "类型代码",
+    "Config.Setting.VerticalRadius": "垂直半径",
+    "Config.Setting.Visible": "显示",
+    "Config.Text.Icon": "图标需要填写 SVG 资源的完整路径；设为 null 可禁用。例如：game:textures/icons/checkmark.svg",
+    "Config.Text.Markers": "“dead”和“pet”用于实体的固定状态，无法通过匹配规则配置；你也可以添加自己的分组。",
+    "Config.Text.RefreshRate": "用于检查标记的存活状态、显示状态以及水平/垂直半径的频率（默认：1000；禁用：-1）",
+    "Config.Text.SupportsWildcard": "支持通配符和正则表达式"
+}

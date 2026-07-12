@@ -674,7 +674,7 @@
       }
     ],
     "homepage": "https://mods.vintagestory.at/ecosystemflora",
-    "latestVersion": "4.5.52"
+    "latestVersion": "builtin"
   },
   "hydrateordiedrate": {
     "name": "Hydrate or Diedrate",
@@ -1086,6 +1086,38 @@
     ],
     "homepage": "https://mods.vintagestory.at/particlesplus",
     "latestVersion": "decompiled",
+    "contributors": [
+      {
+        "name": "HansJack",
+        "url": "https://vintagestory.top/u/HansJack",
+        "role": "Chinese Translator"
+      }
+    ]
+  },
+  "mobsradar": {
+    "name": "Mobs Radar [Finished]",
+    "translation": "生物雷达",
+    "authors": [
+      "DanaCraluminum"
+    ],
+    "homepage": "https://mods.vintagestory.at/mobsradar",
+    "latestVersion": "3.0.0",
+    "contributors": [
+      {
+        "name": "HansJack",
+        "url": "https://vintagestory.top/u/HansJack",
+        "role": "Chinese Translator"
+      }
+    ]
+  },
+  "airthermomod": {
+    "name": "Self-Recording Thermometer",
+    "translation": "自动记录温度计",
+    "authors": [
+      "Spoonail"
+    ],
+    "homepage": "https://mods.vintagestory.at/airthermomod",
+    "latestVersion": "0.5.0",
     "contributors": [
       {
         "name": "HansJack",
