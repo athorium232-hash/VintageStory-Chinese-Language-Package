@@ -813,7 +813,7 @@
       "Exmortis"
     ],
     "homepage": "https://mods.vintagestory.at/show/mod/55535",
-    "latestVersion": "0.2.6",
+    "latestVersion": "0.3.6",
     "contributors": [
       {
         "name": "Cirno",
@@ -1053,7 +1053,7 @@
       "Niikelion"
     ],
     "homepage": "https://mods.vintagestory.at/modularbackpacks",
-    "latestVersion": "1.0.0",
+    "latestVersion": "1.2.3",
     "contributors": [
       {
         "name": "Cirno",
@@ -1122,6 +1122,38 @@
       {
         "name": "HansJack",
         "url": "https://vintagestory.top/u/HansJack",
+        "role": "Chinese Translator"
+      }
+    ]
+  },
+  "dairyplus": {
+    "name": "Dairy Plus",
+    "translation": "乳制品拓展",
+    "authors": [
+      "AllegroSky"
+    ],
+    "homepage": "https://mods.vintagestory.at/dairyplus",
+    "latestVersion": "2.0.0-pre.1",
+    "contributors": [
+      {
+        "name": "Ch44",
+        "url": "https://vintagestory.top/u/Ch44",
+        "role": "Chinese Translator"
+      }
+    ]
+  },
+  "food-preferences": {
+    "name": "Food Preferences",
+    "translation": "食物偏好",
+    "authors": [
+      "Ashadelo"
+    ],
+    "homepage": "https://mods.vintagestory.at/show/mod/46016",
+    "latestVersion": "1.6.1",
+    "contributors": [
+      {
+        "name": "Ch44",
+        "url": "https://vintagestory.top/u/Ch44",
         "role": "Chinese Translator"
       }
     ]

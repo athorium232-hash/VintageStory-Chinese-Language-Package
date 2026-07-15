@@ -1,0 +1,212 @@
+{
+    // block names
+    "game:tabname-dairyplus": "乳制品扩展",
+
+    "dairyplus:block-barrelchurn": "黄油搅拌桶",
+    "dairyplus:block-plungerchurn": "黄油搅乳器",
+    "dairyplus:block-creamscoop": "奶油勺",
+    "dairyplus:block-cheesekettle-east": "奶酪锅",
+	
+    "dairyplus:block-decorativecheesekettle-east" : "装饰性奶酪锅",
+    "dairyplus:block-butterdish-plain-north": "蜡制黄油碟",
+    "dairyplus:block-butterdish-glass-north": "蜡制黄油碟（带盖）",
+
+    // item names
+    "dairyplus:item-butter-unsalted": "无盐黄油",
+    "dairyplus:item-butter-salted": "含盐黄油",
+    "dairyplus:item-butter-twicesalted": "双盐黄油",
+    "dairyplus:item-butter-veggie": "植物黄油",
+    "dairyplus:item-butter-saltedveggie": "含盐植物黄油",
+
+    "dairyplus:item-soybeans-shelled": "去皮大豆",
+    "dairyplus:item-soybeans-soaked": "浸泡大豆",
+    "dairyplus:item-soypaste": "大豆酱",
+
+    "dairyplus:item-plaincustard": "原味卡仕达酱",
+    "dairyplus:item-tofu": "豆腐",
+
+    "dairyplus:item-curd-whole": "全脂奶凝乳",
+    "dairyplus:item-curd-skim": "脱脂奶凝乳",
+    "dairyplus:item-driedcurds": "干凝乳",
+	
+    "dairyplus:item-halloumi-uncooked": "哈罗米奶酪（新鲜）",
+    "dairyplus:item-halloumi-partcooked": "哈罗米奶酪（轻烤）",
+    "dairyplus:item-halloumi-cooked": "哈罗米奶酪（烤制）",
+    "dairyplus:item-halloumi-burnt": "哈罗米奶酪（焦烤）",
+	
+    "dairyplus:item-halloumiskewer-uncooked": "哈罗米奶酪串（新鲜）",
+    "dairyplus:item-halloumiskewer-partcooked": "哈罗米奶酪串（轻烤）",
+    "dairyplus:item-halloumiskewer-cooked": "哈罗米奶酪串（烤制）",
+    "dairyplus:item-halloumiskewer-burnt": "哈罗米奶酪串（焦烤）",
+	
+    "dairyplus:item-mozzaball": "马苏里拉奶酪",
+    "dairyplus:item-provalone-fresh": "普罗沃隆奶酪",
+    "dairyplus:item-provalone-aged": "陈年普罗沃隆奶酪",
+    "dairyplus:item-provaloneslice-fresh": "普罗沃隆奶酪切片",
+    "dairyplus:item-provaloneslice-aged": "陈年普罗沃隆奶酪切片",
+    "dairyplus:item-feta": "菲达奶酪",
+	
+	
+    //Pie
+    "pie-single-dairyplus:tofu-raw": "豆腐派（生）",
+    "pie-single-dairyplus:tofu-partbaked": "豆腐派（半熟）",
+    "pie-single-dairyplus:tofu-perfect": "豆腐派",
+    "pie-single-dairyplus:tofu-charred": "豆腐派（焦）",
+	
+    "pie-single-dairyplus:mozzaball-raw": "奶酪派（生）",
+    "pie-single-dairyplus:mozzaball-partbaked": "奶酪派（半熟）",
+    "pie-single-dairyplus:mozzaball-perfect": "奶酪派",
+    "pie-single-dairyplus:mozzaball-charred": "奶酪派（焦）",
+	
+    "pie-single-dairyplus:feta-raw": "奶酪派（生）",
+    "pie-single-dairyplus:feta-partbaked": "奶酪派（半熟）",
+    "pie-single-dairyplus:feta-perfect": "奶酪派",
+    "pie-single-dairyplus:feta-charred": "奶酪派（焦）",
+	
+    "pie-single-dairyplus:curd-whole-raw": "奶酪派（生）",
+    "pie-single-dairyplus:curd-whole-partbaked": "奶酪派（半熟）",
+    "pie-single-dairyplus:curd-whole-perfect": "奶酪派",
+    "pie-single-dairyplus:curd-whole-charred": "奶酪派（焦）",
+	
+    "pie-single-dairyplus:curd-skim-raw": "奶酪派（生）",
+    "pie-single-dairyplus:curd-skim-partbaked": "奶酪派（半熟）",
+    "pie-single-dairyplus:curd-skim-perfect": "奶酪派",
+    "pie-single-dairyplus:curd-skim-charred": "奶酪派（焦）",
+	
+    "pie-single-dairyplus:provaloneslice-fresh-raw": "奶酪派（生）",
+    "pie-single-dairyplus:provaloneslice-fresh-partbaked": "奶酪派（半熟）",
+    "pie-single-dairyplus:provaloneslice-fresh-perfect": "奶酪派",
+    "pie-single-dairyplus:provaloneslice-fresh-charred": "奶酪派（焦）",
+	
+    "pie-single-dairyplus:provaloneslice-aged-raw": "奶酪派（生）",
+    "pie-single-dairyplus:provaloneslice-aged-partbaked": "奶酪派（半熟）",
+    "pie-single-dairyplus:provaloneslice-aged-perfect": "奶酪派",
+    "pie-single-dairyplus:provaloneslice-aged-charred": "奶酪派（焦）",
+	
+
+    // liquid names
+    "dairyplus:liquid-cream": "奶油",
+    "dairyplus:liquid-skimmilk": "脱脂牛奶",
+    "dairyplus:liquid-condensedmilk": "炼乳",
+    "dairyplus:liquid-soymilk": "豆浆",
+    "dairyplus:liquid-separatingmilk": "分层牛奶",
+    "dairyplus:liquid-sauce-plain": "奶油酱汁",
+    "dairyplus:liquid-sauce-cheese": "奶酪酱汁",
+    "dairyplus:liquid-fruitvinegar": "水果醋",
+    "dairyplus:liquid-whey": "乳清",
+
+    "dairyplus:incontainer-item-cream": "奶油",
+    "dairyplus:incontainer-item-skimmilk": "脱脂牛奶",
+    "dairyplus:incontainer-item-condensedmilk": "炼乳",
+    "dairyplus:incontainer-item-soymilk": "豆浆",
+    "dairyplus:incontainer-item-separatingmilk": "分层牛奶",
+    "dairyplus:incontainer-item-sauce-plain": "奶油酱汁",
+    "dairyplus:incontainer-item-sauce-cheese": "奶酪酱汁",
+    "dairyplus:incontainer-item-fruitvinegar": "水果醋",
+    "dairyplus:incontainer-item-whey": "乳清",
+
+    "dairyplus:item-cream": "奶油",
+    "dairyplus:item-skimmilk": "脱脂牛奶",
+    "dairyplus:item-condensedmilk": "炼乳",
+    "dairyplus:item-soymilk": "豆浆",
+    "dairyplus:item-separatingmilk": "分层牛奶",
+    "dairyplus:item-sauce-plain": "奶油酱汁",
+    "dairyplus:item-sauce-cheese": "奶酪酱汁",
+    "dairyplus:item-fruitvinegar": "水果醋",
+    "dairyplus:item-whey": "乳清",
+
+    //item desc.
+    "itemdesc-butter-unsalted": "刚从搅乳器中新鲜制成。",
+    "itemdesc-butter-salted": "轻微加盐以利保存和增加风味。",
+    "itemdesc-butter-twicesalted": "过度加盐以保存。再次食用前必须清洗。",
+    "itemdesc-butter-veggie": "一种用于烹饪的植物基选择。",
+    "itemdesc-butter-saltedveggie": "轻微加盐以利保存和增加风味。",
+
+    "itemdesc-soybeans-shelled": "已去荚。",
+    "itemdesc-soybeans-soaked": "已浸泡，可进行加工。",
+    "itemdesc-soypaste": "研磨成的湿糊状物。加热后方可安全食用。",
+
+    //block desc.
+    "blockdesc-plungerchurn": "用来将奶油搅成黄油，需要费点力气。",
+    "blockdesc-barrelchurn": "更大的搅乳器，可容纳更多奶油，并可机械驱动。",
+    "blockdesc-creamscoop": "一种从牛奶中撇取奶油的简单工具。",
+    "blockdesc-butterdish-*": "蜡制的黄油复制品，不会腐烂。纯装饰用途。",
+
+    //handbook enteries
+    "item-handbooktitle-plungerchurn": "用途",
+    "item-handbooktext-plungerchurn": "将奶油放入顶部槽位，与手柄互动开始搅动。",
+	
+    "dairyplus:cheesekettle-craftedby": "在奶酪锅中制作",
+    
+    //Meal ingredients liquid
+    "dairyplus:recipeingredient-item-condensedmilk-topping": "炼乳",
+    "dairyplus:recipeingredient-item-cream-topping": "奶油",
+    "dairyplus:recipeingredient-item-soymilk-topping": "豆浆",
+    "dairyplus:recipeingredient-item-sauce-cheese-topping": "奶酪酱汁",
+    "dairyplus:recipeingredient-item-sauce-plain-topping": "奶油酱汁",
+    "dairyplus:recipeingredient-item-skimmilk-topping": "脱脂牛奶",
+    "dairyplus:recipeingredient-item-whey-topping": "乳清",
+	
+    "dairyplus:recipeingredient-item-condensedmilk-insturmentalcase": "炼乳",
+    "dairyplus:recipeingredient-item-cream-insturmentalcase": "奶油",
+    "dairyplus:recipeingredient-item-soymilk-insturmentalcase": "豆浆",
+    "dairyplus:recipeingredient-item-sauce-cheese-insturmentalcase": "奶酪酱汁",
+    "dairyplus:recipeingredient-item-sauce-plain-insturmentalcase": "奶油酱汁",
+    "dairyplus:recipeingredient-item-skimmilk-insturmentalcase": "脱脂牛奶",
+    "dairyplus:recipeingredient-item-whey-insturmentalcase": "乳清",
+    "game:recipeingredient-item-milkportion-insturmentalcase": "牛奶",
+	
+    //Meal ingredients solid
+    "dairyplus:recipeingredient-item-soybeans-insturmentalcase": "大豆",
+    "dairyplus:recipeingredient-item-butter-insturmentalcase": "黄油",
+    "dairyplus:recipeingredient-item-curd-insturmentalcase": "凝乳",
+    "dairyplus:recipeingredient-item-driedcurds-insturmentalcase": "干凝乳",
+	
+    "game:ingredient-stew-primary-soybeans": "大豆",
+    "game:meal-ingredient-stew-primary-soybeans": "大豆",
+    "game:-ingredient-stew-primary-curd": "凝乳",
+    "game:meal-ingredient-stew-primary-curd": "凝乳",
+	
+    "game:ingredient-stew-secondary-soybeans": "大豆",
+    "game:meal-ingredient-stew-secondary-soybeans": "大豆",
+    "game:ingredient-stew-secondary-curd": "凝乳",
+    "game:meal-ingredient-stew-secondary-curd": "凝乳",
+    "game:ingredient-stew-secondary-tofu": "豆腐",
+    "game:meal-ingredient-stew-secondary-tofu": "豆腐",
+	
+    "game:meal-ingredient-soup-primary-soybeans": "大豆",
+    "game:meal-ingredient-soup-primary-feta": "菲达",
+	
+    "game:meal-ingredient-soup-secondary-whey": "乳清",
+	
+    "dairyplus:recipeingredient-item-tofu-insturmentalcase": "豆腐",
+    "dairyplus:recipeingredient-item-provaloneslice-insturmentalcase": "普罗沃隆奶酪",
+    "dairyplus:recipeingredient-item-mozzaball-insturmentalcase": "马苏里拉奶酪",
+    "dairyplus:recipeingredient-item-feta-insturmentalcase": "菲达奶酪",
+	
+    //Meals
+	
+    "game:meal-normal-custard": "蛋奶冻 {1}",
+    "game:mealrecipe-name-custard": "蛋奶冻",
+    "game:mealrecipe-name-custard-in-container": "蛋奶冻",
+	
+    "dairyplus:recipe-none": "没有匹配的配方。",
+    "dairyplus:recipe-oneoutput": "将制作 {0}。",
+    "dairyplus:recipe-twooutput": "将制作 {0} 和 {1}。",
+	
+    "game:handbook-mealingredient-custard": "卡仕达酱",
+    "game:handbook-mealingredient-other": "蘸料块",
+    "game:handbook-mealingredient-smallbits": "小配料",
+    "game:handbook-mealingredient-mediumbits": "中配料",
+    "game:handbook-mealingredient-butter": "黄油",
+
+    "creamguide-title": "制作机制：撇取奶油",
+    "creamguide-text": "<strong>撇取奶油</strong><br>首先，你需要一些新鲜牛奶。任何10升的倍数都可以。<br>牛奶静置后会自然分离；所以将牛奶封入桶中，让它静置不动，同时准备下一步。<br><br>制作一个<a href=\"handbook://block-dairyplus:creamscoop\">奶油勺</a>，一旦牛奶脂肪浮到顶部，你就可以从桶中的<a href=\"handbook://item-dairyplus:separatingmilk\">分层牛奶</a>中撇取奶油。做法是：手持奶油勺蹲下，与桶互动。<br>请耐心，这一步需要细致操作并花费一些时间，否则你只会把牛奶重新混合在一起。<br><br>用勺子撇满<a href=\"handbook://item-dairyplus:cream\">奶油</a>后，桶里会剩下一些<a href=\"handbook://item-dairyplus:skimmilk\">脱脂牛奶</a>。虽然营养略低，且不能再制成切达奶酪，但这种牛奶仍可用于所有其他需要添加乳制品的场合。<br><br>模组：DairyPlus",
+
+    "butterguide-title": "制作机制：搅制黄油",
+    "butterguide-text": "<strong>搅制黄油</strong><br><a href=\"handbook://item-dairyplus:cream\">奶油</a>本身有多种烹饪用途，但将其搅打成<a href=\"handbook://item-dairyplus:butter-unsalted\">黄油</a>将为你带来全新的烹饪选择。<br><br>虽然需要一些力气，但<a href=\"handbook://block-dairyplus:plungerchurn\">黄油搅乳器</a>可以帮你完成。点击搅乳器的底部会打开一个界面，顶部槽位放奶油，<br>底部槽位收集新鲜制作的黄油。倒入奶油，与手柄互动，然后看着奶油在你眼前变成黄油。<br><br>模组：DairyPlus",
+
+    //compat 
+    "expandedfoods:recipeingredient-item-fruitsyrupportion-topping": "糖浆",
+    "expandedfoods:recipeingredient-item-treesyrupportion-topping": "糖浆"
+}

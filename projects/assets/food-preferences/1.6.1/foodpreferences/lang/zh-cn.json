@@ -1,0 +1,41 @@
+{
+  "foodpreferences:title": "食物偏好",
+  "foodpreferences:toggle": "打开食物偏好",
+
+  "foodpreferences:tier.favorite": "最爱",
+  "foodpreferences:tier.liked": "喜欢",
+  "foodpreferences:tier.neutral": "中立",
+  "foodpreferences:tier.disliked": "不喜欢",
+  "foodpreferences:tier.hated": "讨厌",
+
+  "foodpreferences:tooltip.preference": "食物偏好：{0}",
+  "foodpreferences:tooltip.preferencewithmodifier": "食物偏好：{0}（{1}）",
+  "foodpreferences:tooltip.adjustedsatiety": "调整后饱食度：{0}（基础：{1}）",
+  "foodpreferences:tooltip.adjustedhydration": "调整后水分：{0}（基础：{1}）",
+  "foodpreferences:tooltip.ingredienteffects": "食材效果：",
+  "foodpreferences:tooltip.ingredienteffect": "{0}：饱食度 {1}（{2}）",
+  "foodpreferences:tooltip.basesatiety": "基础饱食度：{0}",
+  "foodpreferences:tooltip.mixed": "混合",
+
+  "foodpreferences:undiscovered": "未发现",
+  "foodpreferences:undiscoveredhint": "食用这种食材来发现你的偏好。",
+  "foodpreferences:empty": "尚未发现任何食物。",
+  "foodpreferences:search.placeholder": "搜索食物……",
+
+  "foodpreferences:tab.cravings": "渴望",
+  "foodpreferences:cravings.none": "没有活跃的渴望。",
+  "foodpreferences:cravings.group": "组别",
+  "foodpreferences:cravings.expiresin": "剩余时间",
+  "foodpreferences:traits.cravingbonusline": "食物偏好渴望加成：{0} - 剩余 {1}",
+  "foodpreferences:reward.health": "+{0} 生命值",
+  "foodpreferences:reward.toolspeed": "{0} 工具速度",
+  "foodpreferences:reward.temporalstability": "+{0} 时空稳定性",
+  "foodpreferences:reward.hungerdrain": "-{0} 饥饿消耗",
+  "foodpreferences:reward.healingeffectiveness": "{0} 治疗效果",
+  "foodpreferences:reward.unknown": "未知奖励",
+  "foodpreferences:foodgroup.fruit": "水果",
+  "foodpreferences:foodgroup.vegetable": "蔬菜",
+  "foodpreferences:foodgroup.grain": "谷物",
+  "foodpreferences:foodgroup.protein": "蛋白质",
+  "foodpreferences:foodgroup.dairy": "乳制品"
+}

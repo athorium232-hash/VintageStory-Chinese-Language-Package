@@ -1,0 +1,41 @@
+{
+  "foodpreferences:title": "Food Preferences",
+  "foodpreferences:toggle": "Open Food Preferences",
+
+  "foodpreferences:tier.favorite": "Favorite",
+  "foodpreferences:tier.liked": "Liked",
+  "foodpreferences:tier.neutral": "Neutral",
+  "foodpreferences:tier.disliked": "Disliked",
+  "foodpreferences:tier.hated": "Hated",
+
+  "foodpreferences:tooltip.preference": "Food Preference: {0}",
+  "foodpreferences:tooltip.preferencewithmodifier": "Food Preference: {0} ({1})",
+  "foodpreferences:tooltip.adjustedsatiety": "Adjusted Satiety: {0} (Base: {1})",
+  "foodpreferences:tooltip.adjustedhydration": "Adjusted Hydration: {0} (Base: {1})",
+  "foodpreferences:tooltip.ingredienteffects": "Ingredient Effects:",
+  "foodpreferences:tooltip.ingredienteffect": "{0}: {1} satiety ({2})",
+  "foodpreferences:tooltip.basesatiety": "Base Satiety: {0}",
+  "foodpreferences:tooltip.mixed": "Mixed",
+
+  "foodpreferences:undiscovered": "Undiscovered",
+  "foodpreferences:undiscoveredhint": "Eat this ingredient to discover your preference.",
+  "foodpreferences:empty": "No foods discovered yet.",
+  "foodpreferences:search.placeholder": "Search foods...",
+
+  "foodpreferences:tab.cravings": "Cravings",
+  "foodpreferences:cravings.none": "No active cravings.",
+  "foodpreferences:cravings.group": "Group",
+  "foodpreferences:cravings.expiresin": "Expires in",
+  "foodpreferences:traits.cravingbonusline": "Food Preference Craving Bonus: {0} - {1} remaining",
+  "foodpreferences:reward.health": "+{0} Health",
+  "foodpreferences:reward.toolspeed": "{0} Tool Speed",
+  "foodpreferences:reward.temporalstability": "+{0} Temporal Stability",
+  "foodpreferences:reward.hungerdrain": "-{0} Hunger Drain",
+  "foodpreferences:reward.healingeffectiveness": "{0} Healing Effectiveness",
+  "foodpreferences:reward.unknown": "Unknown Reward",
+  "foodpreferences:foodgroup.fruit": "Fruit",
+  "foodpreferences:foodgroup.vegetable": "Vegetable",
+  "foodpreferences:foodgroup.grain": "Grain",
+  "foodpreferences:foodgroup.protein": "Protein",
+  "foodpreferences:foodgroup.dairy": "Dairy"
+}
